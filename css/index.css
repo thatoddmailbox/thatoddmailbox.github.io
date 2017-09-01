@@ -11,6 +11,7 @@
 }
 .project-image {
 	width: 100%;
+	max-width: 250px;
 }
 .project-name {
 	font-size: 24px;

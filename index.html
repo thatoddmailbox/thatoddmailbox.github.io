@@ -10,11 +10,11 @@ css: /css/index.css
 	<div class="project">
 		<div class="project-container">
 			<div class="row">
-				<div class="col-3">
+				<div class="col-md-3">
 					<img src="/img/{{ project.path | replace: "_", "" | replace: ".md", ".png" }}" alt="Image of {{ project.name }}" class="project-image" />
 				</div>
 
-				<div class="col-9">
+				<div class="col-md-9">
 					<div class="project-name">
 						{{ project.name }}
 						{% if project.technology %}
