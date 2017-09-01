@@ -1,6 +1,13 @@
 .project {
 	border-bottom: solid 1px #ccc;
+	display: table;
 	padding: 20px 10px;
+	width: 100%;
+	min-height: 230px;
+}
+.project-container {
+	display: table-cell;
+    vertical-align: middle;
 }
 .project-image {
 	width: 100%;
