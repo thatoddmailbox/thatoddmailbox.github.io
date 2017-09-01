@@ -2,8 +2,8 @@
 layout: project
 
 name: NoteToScreen
+details_front: details details details
 
-details_front: other details
 go_url: https://notetoscreen.com
 
 technology:
