@@ -1,16 +1,17 @@
 .project {
-	border-bottom: solid 1px black;
-	padding: 10px;
+	border-bottom: solid 1px #ccc;
+	padding: 20px 10px;
 }
 .project-image {
 	width: 100%;
 }
 .project-name {
-	font-size: 22px;
+	font-size: 24px;
 }
-.project-award, .project-oss {
-	color: #222;
+.project-technology {
+	display: inline-block;
 	font-size: 14px;
+	margin-left: 5px;
 }
 .project-technology-item {
 	display: inline-block;
@@ -21,6 +22,10 @@
 	display: inline-block;
 	width: 12px;
 	height: 12px;
+}
+.project-award, .project-oss {
+	color: #222;
+	font-size: 14px;
 }
 .project-details {
 	margin-top: 5px;
