@@ -4,6 +4,9 @@ css: /css/index.css
 ---
 <div class="container">
 	{% for project in site.projects %}
+	{% if project.hidden %}
+	{% continue %}
+	{% endif %}
 	<div class="project row">
 		<div class="col-3">
 			<img src="/img/{{ project.path | replace: "_", "" | replace: ".md", ".png" }}" alt="Image of {{ project.name }}" class="project-image" />
