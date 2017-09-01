@@ -6,7 +6,7 @@ css: /css/index.css
 	{% for project in site.projects %}
 	<div class="project row">
 		<div class="col-3">
-			image
+			<img src="/img/{{ project.path | replace: "_", "" | replace: ".md", ".png" }}" alt="Image of {{ project.name }}" class="project-image" />
 		</div>
 
 		<div class="col-9">
