@@ -2,6 +2,13 @@
     border-bottom: solid 1px black;
     padding: 10px;
 }
+.project-name {
+    font-size: 22px;
+}
+.project-oss {
+    color: #444;
+    font-size: 14px;
+}
 .project-technology-item {
     display: inline-block;
     margin-right: 5px;
@@ -11,4 +18,8 @@
     display: inline-block;
     width: 12px;
     height: 12px;
+}
+.project-details {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
