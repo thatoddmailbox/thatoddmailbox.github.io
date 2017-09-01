@@ -1,8 +1,14 @@
+.bg-arduino {
+    background: #bd79d1;
+}
 .bg-assembly {
     background: #6e4c13;
 }
 .bg-c {
     background: #555555;
+}
+.bg-cs {
+    background: #178600;
 }
 .bg-css {
     background: #563d7c;

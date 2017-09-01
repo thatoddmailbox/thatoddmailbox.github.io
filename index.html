@@ -16,7 +16,7 @@ css: /css/index.css
 				Built with: 
 				{% for tech in project.technology %}
 				<div class="project-technology-item">
-					<div class="project-technology-icon bg-{{ tech | replace: "+", "p" | downcase }}"></div>
+					<div class="project-technology-icon bg-{{ tech | replace: "+", "p" | replace: "#", "s" | downcase }}"></div>
 					{{ tech }}
 				</div>
 				{% endfor %}
@@ -30,11 +30,13 @@ css: /css/index.css
 				{% endif %}
 			</div>
 			<div class="project-actions">
+				{% if project.go_url %}
 				<a href="{{ project.go_url }}" class="btn btn-primary">Go there</a>
+				{% endif %}
 
 				{% if project.github %}
 				<a href="{{ project.github }}" class="btn btn-outline-info"><i class="fa fa-github"></i> View source</a>
-				{% endif %}		
+				{% endif %}
 			</div>
 		</div>
 	</div>
