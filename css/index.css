@@ -8,8 +8,8 @@
 .project-name {
 	font-size: 22px;
 }
-.project-oss {
-	color: #444;
+.project-award, .project-oss {
+	color: #222;
 	font-size: 14px;
 }
 .project-technology-item {

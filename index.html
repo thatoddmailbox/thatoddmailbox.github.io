@@ -14,9 +14,15 @@ css: /css/index.css
 
 		<div class="col-9">
 			<div class="project-name">{{ project.name }}</div>
+			{% if project.award %}
+			<div class="project-award">
+				<i class="fa fa-fw fa-trophy"></i>
+				{{ project.award }}
+			</div>
+			{% endif %}
 			{% if project.license %}
 			<div class="project-oss">
-				<i class="fa fa-gavel"></i>
+				<i class="fa fa-fw fa-gavel"></i>
 				Open source under the {{ project.license }} license
 			</div>
 			{% endif %}
