@@ -1,10 +1,10 @@
 ---
 layout: project
 
-name: gbasm
+name: slack-status-bot
 details_front: details details details
 
-github: https://github.com/thatoddmailbox/gbasm
+github: https://github.com/thatoddmailbox/slack-status-bot
 license: MIT
 
 technology:

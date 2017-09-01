@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: project
 name: DaltonTab
 details_front: details details details
 

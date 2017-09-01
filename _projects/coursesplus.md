@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: project
 name: CoursesPlus
 details_front: details details details
 

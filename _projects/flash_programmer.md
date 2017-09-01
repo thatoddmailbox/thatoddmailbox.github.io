@@ -1,5 +1,6 @@
 ---
-layout: base
+layout: project
+
 name: flash_programmer
 details_front: details details details
 

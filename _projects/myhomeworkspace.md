@@ -1,5 +1,6 @@
 ---
-layout: base
+layout: project
+
 name: MyHomeworkSpace
 details_front: details details details
 

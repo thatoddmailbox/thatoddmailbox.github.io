@@ -1,5 +1,6 @@
 ---
-layout: base
+layout: project
+
 name: Zum Puzzler Pocket
 details_front: details details details
 

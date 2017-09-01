@@ -1,5 +1,6 @@
 ---
-layout: base
+layout: project
+
 name: NoteToScreen
 
 details_front: other details
