@@ -4,57 +4,34 @@ css: /css/index.css
 ---
 <div class="container">
 	{% for project in site.projects %}
-	{% if project.hidden %}
+	{% if project.hidden or project.small %}
 	{% continue %}
 	{% endif %}
 	<div class="project">
 		<div class="project-container">
 			<div class="row">
 				<div class="col-md-3">
-					<img src="/img/{{ project.path | replace: "_", "" | replace: ".md", ".png" }}" alt="Image of {{ project.name }}" class="project-image" />
+					{% include project_image.html %}
 				</div>
 
 				<div class="col-md-9">
-					<div class="project-name">
-						{{ project.name }}
-						{% if project.technology %}
-						<div class="project-technology">
-							{% for tech in project.technology %}
-							<div class="project-technology-item">
-								<div class="project-technology-icon bg-{{ tech | replace: "+", "p" | replace: "#", "s" | downcase }}"></div>
-								{{ tech }}
-							</div>
-							{% endfor %}
-						</div>
-						{% endif %}
-					</div>
-					{% if project.award %}
-					<div class="project-award">
-						<i class="fa fa-fw fa-trophy"></i>
-						{{ project.award }}
-					</div>
-					{% endif %}
-					{% if project.license %}
-					<div class="project-oss">
-						<i class="fa fa-fw fa-gavel"></i>
-						Open source under the {{ project.license }} license
-					</div>
-					{% endif %}
-					<div class="project-details">
-						{{ project.details_front }}
-					</div>
-					<div class="project-actions">
-						{% if project.go_url %}
-						<a href="{{ project.go_url }}" class="btn btn-primary">Go there</a>
-						{% endif %}
-
-						{% if project.github %}
-						<a href="{{ project.github }}" class="btn btn-outline-info"><i class="fa fa-github"></i> View source</a>
-						{% endif %}
-					</div>
+					{% include project_info.html %}
 				</div>
 			</div>
 		</div>
 	</div>
 	{% endfor %}
+</div>
+
+<div class="container">
+	<div class="row">
+		{% for project in site.projects %}
+		{% if project.hidden or project.small != true %}
+		{% continue %}
+		{% endif %}
+		<div class="col-md-3">
+			{% include project_info.html %}
+		</div>
+		{% endfor %}
+	</div>
 </div>
