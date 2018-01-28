@@ -6,3 +6,12 @@ navigation:
   url: /
 - name: Projects
   url: /projects
+- name: Posts
+  url: /posts
+
+paginate: 5
+paginate_path: "/posts/:num/"
+
+plugins:
+- jekyll-feed
+- jekyll-paginate

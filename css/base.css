@@ -31,3 +31,18 @@
 .bg-swift {
 	background: #ffac45;
 }
+
+pre {
+	padding: 10px;
+}
+
+code {
+	background: #f8f8f8;
+}
+
+.title {
+	margin-top: 10px;
+}
+.title-rss {
+	font-size: 18px;
+}
