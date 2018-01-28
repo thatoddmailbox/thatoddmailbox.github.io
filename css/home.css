@@ -1,0 +1,16 @@
+.home-jumbotron {
+	text-align: center;
+}
+
+.home-name {
+	font-size: 52px;
+}
+
+.home-details {
+	font-size: 24px;
+}
+
+.home-links {
+	font-size: 18px;
+	margin-top: 10px;
+}

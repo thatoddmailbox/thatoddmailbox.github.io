@@ -1,0 +1,47 @@
+---
+title: Projects
+layout: base
+css: /css/projects.css
+---
+{% assign projects_sorted = site.projects | sort: 'index', 'last' %}
+
+<div class="container">
+	{% for project in projects_sorted %}
+	{% if project.hidden or project.small %}
+	{% continue %}
+	{% endif %}
+	<div class="project">
+		<div class="project-container">
+			<div class="row">
+				<div class="col-md-3">
+					{% include project_image.html %}
+				</div>
+
+				<div class="col-md-9">
+					{% include project_info.html %}
+				</div>
+			</div>
+		</div>
+	</div>
+	{% endfor %}
+</div>
+
+<div class="container">
+	<div class="row project-small-row">
+		{% for project in projects_sorted %}
+
+		{% if project.hidden or project.small != true %}
+		{% continue %}
+		{% endif %}
+
+		<div class="{% if project.index < 7 %}col-md-6{% else %}col-md-3{% endif %}">
+			{% include project_info.html %}
+		</div>
+		{% if project.index == 6 %}
+			</div>
+			<div class="row project-small-row">
+		{% endif %}
+
+		{% endfor %}
+	</div>
+</div>

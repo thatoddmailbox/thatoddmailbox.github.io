@@ -1,2 +1,8 @@
 collections:
 - projects
+
+navigation:
+- name: Home
+  url: /
+- name: Projects
+  url: /projects

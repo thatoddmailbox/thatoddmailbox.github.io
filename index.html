@@ -1,46 +1,25 @@
 ---
+title: Home
 layout: base
-css: /css/index.css
+css: /css/home.css
 ---
-{% assign projects_sorted = site.projects | sort: 'index', 'last' %}
+<div class="jumbotron jumbotron-fluid home-jumbotron">
+	<div class="container">
+		<h1 class="home-name display-4">Alex Studer</h1>
+		<p class="home-details lead">High schooler at The Dalton School in New York City</p>
 
-<div class="container">
-	{% for project in projects_sorted %}
-	{% if project.hidden or project.small %}
-	{% continue %}
-	{% endif %}
-	<div class="project">
-		<div class="project-container">
-			<div class="row">
-				<div class="col-md-3">
-					{% include project_image.html %}
-				</div>
-
-				<div class="col-md-9">
-					{% include project_info.html %}
-				</div>
-			</div>
+		<div>
+			<a href="/projects" class="btn btn-lg btn-outline-dark">
+				<i class="fa fa-gears"></i> Things I made
+			</a>
+			<a href="/posts" class="btn btn-lg btn-outline-dark">
+				<i class="fa fa-pencil"></i> Things I wrote
+			</a>
 		</div>
-	</div>
-	{% endfor %}
-</div>
 
-<div class="container">
-	<div class="row project-small-row">
-		{% for project in projects_sorted %}
-
-		{% if project.hidden or project.small != true %}
-		{% continue %}
-		{% endif %}
-
-		<div class="{% if project.index < 7 %}col-md-6{% else %}col-md-3{% endif %}">
-			{% include project_info.html %}
+		<div class="home-links">
+			<div><i class="fa fa-envelope"></i> <a href="mailto:alex_studer@outlook.com">alex_studer@outlook.com</a></div>
+			<div><i class="fa fa-github"></i> <a href="https://github.com/thatoddmailbox">thatoddmailbox</a></div>
 		</div>
-		{% if project.index == 6 %}
-			</div>
-			<div class="row project-small-row">
-		{% endif %}
-
-		{% endfor %}
 	</div>
 </div>
