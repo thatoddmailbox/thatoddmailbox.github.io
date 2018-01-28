@@ -7,6 +7,7 @@ small: true
 index: 5
 
 github: https://github.com/mskcc/htstools
+license: ""
 
 technology:
 - "C++"
