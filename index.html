@@ -2,8 +2,10 @@
 layout: base
 css: /css/index.css
 ---
+{% assign projects_sorted = site.projects | sort: 'index', 'last' %}
+
 <div class="container">
-	{% for project in site.projects %}
+	{% for project in projects_sorted %}
 	{% if project.hidden or project.small %}
 	{% continue %}
 	{% endif %}
@@ -24,14 +26,21 @@ css: /css/index.css
 </div>
 
 <div class="container">
-	<div class="row">
-		{% for project in site.projects %}
+	<div class="row project-small-row">
+		{% for project in projects_sorted %}
+
 		{% if project.hidden or project.small != true %}
 		{% continue %}
 		{% endif %}
-		<div class="col-md-3">
+
+		<div class="{% if project.index < 7 %}col-md-6{% else %}col-md-3{% endif %}">
 			{% include project_info.html %}
 		</div>
+		{% if project.index == 6 %}
+			</div>
+			<div class="row project-small-row">
+		{% endif %}
+
 		{% endfor %}
 	</div>
 </div>

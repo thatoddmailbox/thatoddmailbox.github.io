@@ -1,6 +1,7 @@
 ---
 layout: project
 
+hidden: true
 name: hexos
 details_front: An operating system written from scratch. It boots up, and you can browse an ISO9660 filesystem. (...but not do much else...yet...)
 

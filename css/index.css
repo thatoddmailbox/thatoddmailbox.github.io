@@ -1,7 +1,9 @@
-.project {
+.project-small-row, .project {
 	border-bottom: solid 1px #ccc;
-	display: table;
 	padding: 20px 10px;
+}
+.project {
+	display: table;
 	width: 100%;
 	min-height: 230px;
 }
