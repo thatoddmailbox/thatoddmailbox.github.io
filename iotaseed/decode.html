@@ -1,0 +1,27 @@
+---
+title: Image decoder
+layout: base
+css: css/decode.css
+js: js/decode.js
+---
+
+<div class="container">
+	<p>This page lets you run the decoder logic used in the second stage of the JavaScript backdoor on different version of the logo image, as collected by the Wayback Machine.</p>
+	<p>By clicking on the buttons below, you can see the code embedded in the different versions of the image. Most of the code remains the same, with the only thing changing being the number used to seed the RNG.</p>
+
+	<div>
+		<button class="btn btn-outline-primary update-image" data-image="logo_small_bottom_oct31.png">October 31</button>
+		<button class="btn btn-outline-primary update-image" data-image="logo_small_bottom_dec12.png">December 12</button>
+		<button class="btn btn-outline-primary update-image" data-image="logo_small_bottom_jan3.png">January 3</button>
+	</div>
+
+	<pre><code id="code">Select an image above to decode.</code></pre>
+
+	<canvas width="301px" height="100px"></canvas>
+
+	<div>
+		<a href="/2018/01/28/iotaseed" class="btn btn-sm btn-outline-secondary">&larr; back to post</a>
+	</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.7.5/beautify.min.js"></script>
