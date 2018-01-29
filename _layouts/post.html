@@ -2,5 +2,8 @@
 layout: base
 ---
 <div class="container post">
+	<div class="post-details">
+		<i class="fa fa-clock-o"></i> Published {{ page.date | date: "%B %-d, %Y"  }}
+	</div>
 	{{ content }}
 </div>
