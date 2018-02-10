@@ -1,6 +1,7 @@
 ---
 layout: project
 
+hidden: true
 name: hex
 details_front: A "next-generation programming language". (it's supposed to be a joke)
 small: true
