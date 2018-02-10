@@ -28,6 +28,12 @@
 .bg-javascript {
 	background: #f1e05a;
 }
+.bg-python {
+	background: #3572a5;
+}
+.bg-smali {
+	background: #cccccc;
+}
 .bg-swift {
 	background: #ffac45;
 }
