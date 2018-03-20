@@ -1,6 +1,7 @@
 ---
 layout: project
 
+hidden: true
 name: FCAPlus
 details_front: A series of patches for the FirstClass Android app that improve the app's usability and fix various bugs.
 small: true

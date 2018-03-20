@@ -42,4 +42,8 @@
 	{% if project.github %}
 	<a href="{{ project.github }}" class="btn btn-outline-info" target="_blank"><i class="fa fa-github"></i> View source</a>
 	{% endif %}
+
+	{% for link in project.links %}
+	<a href="{{ link.url }}" class="btn btn-outline-info" target="_blank"><i class="fa fa-{{ link.icon }}"></i> {{ link.name }}</a>
+	{% endfor %}
 </div>
