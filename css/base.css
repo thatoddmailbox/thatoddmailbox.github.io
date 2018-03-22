@@ -46,6 +46,18 @@ code {
 	background: #f8f8f8;
 }
 
+noscript {
+	background: #f1e05a;
+	display: block;
+	padding: 5px;
+	text-align: center;
+	width: 100%;
+}
+.noscript-subtext {
+	font-size: 14px;
+	font-style: italic;
+}
+
 .title {
 	margin-top: 10px;
 }
