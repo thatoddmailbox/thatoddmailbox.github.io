@@ -16,3 +16,11 @@ technology:
 - "HTML"
 - "CSS"
 ---
+# What is it?
+NoteToScreen is a website that lets you quickly, easily, and securely save handwritten notes online. Once they're online, you can access them from anywhere, share them with others, search for text, and collaborate in real time!
+
+# Why was it made?
+I had realized that, in my classes, taking notes by computer was not a very effective strategy for me, but writing notes out inevitably meant that I would lose or somehow manage to destroy them. I wanted some way of getting the best of both worlds, and so NoteToScreen was born.
+
+# What am I proud of?
+One of the challenges with NoteToScreen was the live collaboration feature, which required learning about WebSockets and how to integrate them with my programming language of choice, Go.
