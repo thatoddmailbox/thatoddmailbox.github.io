@@ -27,6 +27,15 @@
 	{% endif %}
 </div>
 {% endif %}
+{% if project.archived %}
+<div class="project-archived">
+	<i class="fa fa-fw fa-archive"></i>
+	Archived project
+	{% if project.archived != "" %}
+	({{ project.archived }})
+	{% endif %}
+</div>
+{% endif %}
 <div class="project-details">
 	{{ project.details_front }}
 </div>
