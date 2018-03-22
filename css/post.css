@@ -4,3 +4,7 @@
 .post img {
 	width: 100%;
 }
+.post .img-side {
+	float: left;
+	width: auto;
+}
