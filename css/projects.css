@@ -2,11 +2,17 @@
 	border-bottom: solid 1px #ccc;
 	padding: 20px 10px;
 }
+
 .project {
 	display: table;
 	width: 100%;
 	min-height: 230px;
+	transition: 0.2s background-color;
 }
+.project.selected {
+	background: #ddd;
+}
+
 .project-container {
 	display: table-cell;
     vertical-align: middle;
@@ -43,4 +49,17 @@
 }
 .project-app-badge {
 	width: 150px;
+}
+
+.project-expand-trigger {
+	margin: 5px 0;
+}
+
+.project-expand-content {
+	padding-top: 10px;
+	overflow: hidden;
+	transition: 0.2s max-height;
+}
+.project-expand-content h1 {
+	font-size: 22px;
 }

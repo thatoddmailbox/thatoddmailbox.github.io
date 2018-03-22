@@ -1,58 +1,71 @@
-<div class="project-name">
-	{{ project.name }}
-	{% if project.technology %}
-	<div class="project-technology">
-		{% for tech in project.technology %}
-		<div class="project-technology-item">
-			<div class="project-technology-icon bg-{{ tech | replace: "+", "p" | replace: "#", "s" | downcase }}"></div>
-			{{ tech }}
+<div class="project-info">
+	<div class="project-name">
+		{{ project.name }}
+		{% if project.technology %}
+		<div class="project-technology">
+			{% for tech in project.technology %}
+			<div class="project-technology-item">
+				<div class="project-technology-icon bg-{{ tech | replace: "+", "p" | replace: "#", "s" | downcase }}"></div>
+				{{ tech }}
+			</div>
+			{% endfor %}
 		</div>
-		{% endfor %}
+		{% endif %}
+	</div>
+	{% if project.award %}
+	<div class="project-award">
+		<i class="fa fa-fw fa-trophy"></i>
+		{{ project.award }}
 	</div>
 	{% endif %}
-</div>
-{% if project.award %}
-<div class="project-award">
-	<i class="fa fa-fw fa-trophy"></i>
-	{{ project.award }}
-</div>
-{% endif %}
-{% if project.license %}
-<div class="project-oss">
-	<i class="fa fa-fw fa-gavel"></i>
-	{% if project.license != "" %}
-	Open source under the {{ project.license }} license
-	{% else %}
-	Open source
+	{% if project.license %}
+	<div class="project-oss">
+		<i class="fa fa-fw fa-gavel"></i>
+		{% if project.license != "" %}
+		Open source under the {{ project.license }} license
+		{% else %}
+		Open source
+		{% endif %}
+	</div>
 	{% endif %}
-</div>
-{% endif %}
-{% if project.archived %}
-<div class="project-archived">
-	<i class="fa fa-fw fa-archive"></i>
-	Archived project
-	{% if project.archived != "" %}
-	({{ project.archived }})
+	{% if project.archived %}
+	<div class="project-archived">
+		<i class="fa fa-fw fa-archive"></i>
+		Archived project
+		{% if project.archived != "" %}
+		({{ project.archived }})
+		{% endif %}
+	</div>
 	{% endif %}
-</div>
-{% endif %}
-<div class="project-details">
-	{{ project.details_front }}
-</div>
-<div class="project-actions">
-	{% if project.go_url %}
-	<a href="{{ project.go_url }}" class="btn btn-primary" target="_blank">Go there</a>
-	{% endif %}
+	<div class="project-details">
+		{{ project.details_front }}
+	</div>
+	<div class="project-actions">
+		{% if project.go_url %}
+		<a href="{{ project.go_url }}" class="btn btn-primary" target="_blank">Go there</a>
+		{% endif %}
 
-	{% if project.play_store_url %}
-	<a href="{{ project.play_store_url }}" target="_blank"><img class="project-app-badge" alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" /></a>
-	{% endif %}
+		{% if project.play_store_url %}
+		<a href="{{ project.play_store_url }}" target="_blank"><img class="project-app-badge" alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" /></a>
+		{% endif %}
 
-	{% if project.github %}
-	<a href="{{ project.github }}" class="btn btn-outline-info" target="_blank"><i class="fa fa-github"></i> View source</a>
-	{% endif %}
+		{% if project.github %}
+		<a href="{{ project.github }}" class="btn btn-outline-info" target="_blank"><i class="fa fa-github"></i> View source</a>
+		{% endif %}
 
-	{% for link in project.links %}
-	<a href="{{ link.url }}" class="btn btn-outline-info" target="_blank"><i class="fa fa-{{ link.icon }}"></i> {{ link.name }}</a>
-	{% endfor %}
+		{% for link in project.links %}
+		<a href="{{ link.url }}" class="btn btn-outline-info" target="_blank"><i class="fa fa-{{ link.icon }}"></i> {{ link.name }}</a>
+		{% endfor %}
+	</div>
+	{% unless project.small %}
+		<div class="project-expand-trigger">
+			<button class="btn btn-sm btn-outline-primary"><i class="fa fa-chevron-down"></i> read more</button>
+		</div>
+	{% endunless %}
+
+	{% unless project.small %}
+	<div class="project-expand-content" style="max-height: 0">
+		{{ project.content }}
+	</div>
+	{% endunless %}
 </div>
