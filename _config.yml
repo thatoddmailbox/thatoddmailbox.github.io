@@ -1,5 +1,7 @@
 collections:
-- projects
+  projects:
+    output: true
+    permalink: /project_info/:name
 
 navigation:
 - name: Home
@@ -14,5 +16,6 @@ paginate_path: "/posts/:num/"
 
 plugins:
 - jekyll-feed
+- jekyll-mentions
 - jekyll-paginate
 - jekyll-redirect-from
