@@ -47,7 +47,12 @@
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
-.project-app-badge {
+.project-app-badge-ios {
+	position: relative;
+	top: 16px;
+	margin-left: 10px;
+}
+.project-app-badge-android {
 	width: 150px;
 }
 

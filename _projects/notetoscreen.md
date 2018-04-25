@@ -6,6 +6,7 @@ details_front: A website that lets you save paper notes in the cloud, share them
 index: 1
 
 go_url: https://notetoscreen.com
+app_store_url: https://itunes.apple.com/us/app/notetoscreen/id1292401613?mt=8
 play_store_url: https://play.google.com/store/apps/details?id=com.notetoscreen.android
 
 technology:

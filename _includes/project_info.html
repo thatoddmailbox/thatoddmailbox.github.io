@@ -45,8 +45,12 @@
 		<a href="{{ project.go_url }}" class="btn btn-primary" target="_blank">Go there</a>
 		{% endif %}
 
+		{% if project.app_store_url %}
+		<a href="{{ project.app_store_url }}" target="_blank" class="project-app-badge-ios" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/appstore-lrg.svg) no-repeat;width:135px;height:40px;background-size:contain;"></a>
+		{% endif %}
+
 		{% if project.play_store_url %}
-		<a href="{{ project.play_store_url }}" target="_blank"><img class="project-app-badge" alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" /></a>
+		<a href="{{ project.play_store_url }}" target="_blank"><img class="project-app-badge-android" alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" /></a>
 		{% endif %}
 
 		{% if project.github %}
