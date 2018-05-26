@@ -13,6 +13,7 @@ play_store_url: https://play.google.com/store/apps/details?id=com.notetoscreen.a
 technology:
 - "Go"
 - "C++"
+- "Swift"
 - "Java"
 - "JavaScript"
 - "HTML"
