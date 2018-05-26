@@ -7,8 +7,24 @@ js: /js/projects.js
 {% assign projects_sorted = site.projects | sort: 'index', 'last' %}
 
 <div class="container">
+	<div class="row">
+		{% for project in projects_sorted %}
+		{% if project.feature != true %}
+		{% continue %}
+		{% endif %}
+		<div class="project feature col-md-6">
+			<div class="blurry-background" style="background-image: url(/img/{{ project.path | replace: "_", "" | replace: ".md", ".png" }})"></div>
+			<div class="project-feature-overlay">
+				{% include project_info.html %}
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</div>
+
+<div class="container">
 	{% for project in projects_sorted %}
-	{% if project.hidden or project.small %}
+	{% if project.hidden or project.small or project.feature %}
 	{% continue %}
 	{% endif %}
 	<div class="project">
@@ -31,7 +47,7 @@ js: /js/projects.js
 	<div class="row project-small-row">
 		{% for project in projects_sorted %}
 
-		{% if project.hidden or project.small != true %}
+		{% if project.hidden or project.small != true or project.feature %}
 		{% continue %}
 		{% endif %}
 
@@ -44,5 +60,24 @@ js: /js/projects.js
 		{% endif %}
 
 		{% endfor %}
+	</div>
+</div>
+
+<div class="modal fade" id="projectDetailsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Project details</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+			</div>
+		</div>
 	</div>
 </div>
