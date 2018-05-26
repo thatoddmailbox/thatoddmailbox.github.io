@@ -40,6 +40,9 @@
 .project.feature .project-expand-content {
 	display: none;
 }
+.project.feature .project-technology {
+	margin-left: 0;
+}
 
 .project-feature-overlay {
 	background: rgba(0, 0, 0, 0.8);
