@@ -12,10 +12,12 @@ js: /js/projects.js
 		{% if project.feature != true %}
 		{% continue %}
 		{% endif %}
-		<div class="project feature col-md-6">
-			<div class="blurry-background" style="background-image: url(/img/{{ project.path | replace: "_", "" | replace: ".md", ".png" }})"></div>
+		<div class="project feature col-md-6 {% if project.name == 'DaltonTab' %}hackydaltontabthing{% endif %}" style="background-image: url(/img/{{ project.path | replace: "_", "" | replace: ".md", ".png" }})">
 			<div class="project-feature-overlay">
-				{% include project_info.html %}
+				<div class="blurry-background" style="background-image: url(/img/{{ project.path | replace: "_", "" | replace: ".md", ".png" }})"></div>
+				<div class="project-feature-overlay-info">
+					{% include project_info.html %}
+				</div>
 			</div>
 		</div>
 		{% endfor %}

@@ -13,10 +13,13 @@
 	background: #ddd;
 }
 .project.feature {
-	background-position: center;
+	background-position: center bottom;
 	background-size: cover;
 	height: 400px;
 	position: relative;
+}
+.project.feature.hackydaltontabthing {
+	background-position: center -100px;
 }
 
 .project.feature .blurry-background {
@@ -28,7 +31,9 @@
 	width: 100%;
 	height: 100%;
 
-	background-position: center;
+	z-index: -1;
+
+	background-position: center bottom;
 	background-size: cover;
 
 	-webkit-filter: blur(2px);
@@ -45,13 +50,16 @@
 }
 
 .project-feature-overlay {
-	background: rgba(0, 0, 0, 0.8);
 	color: white;
 	position: absolute;
 	left: 0;
 	bottom: 0;
 	width: 100%;
 	height: auto;
+	z-index: 1;
+}
+.project-feature-overlay .project-feature-overlay-info {
+	background: rgba(0, 0, 0, 0.8);
 	padding: 10px;
 	z-index: 1;
 }
