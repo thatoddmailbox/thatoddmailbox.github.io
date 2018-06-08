@@ -22,7 +22,14 @@
 	<div class="project-oss">
 		<i class="fa fa-fw fa-gavel"></i>
 		{% if project.license != "" %}
-		Open source under the {{ project.license }} license
+		Open source under the
+			{% for license in project.license %}
+				{{ license }}
+				{% if project.license.first != project.license.last and license != project.license.last %}
+				 and 
+				{% endif %}
+			{% endfor %}
+		license
 		{% else %}
 		Open source
 		{% endif %}
