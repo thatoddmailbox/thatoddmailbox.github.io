@@ -16,14 +16,17 @@
 .bg-cpp {
 	background: #f34b7d;
 }
-.bg-java {
-	background: #b07219;
-}
 .bg-go {
 	background: #375eab;
 }
 .bg-html {
 	background: #e44b23;
+}
+.bg-kicad {
+	background: #ca972e;
+}
+.bg-java {
+	background: #b07219;
 }
 .bg-javascript {
 	background: #f1e05a;
@@ -36,6 +39,9 @@
 }
 .bg-swift {
 	background: #ffac45;
+}
+.bg-z80-assembly {
+	background: #6e4c13;
 }
 
 pre {
