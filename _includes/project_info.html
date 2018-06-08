@@ -29,7 +29,11 @@
 				 and 
 				{% endif %}
 			{% endfor %}
-		license
+		{% if project.license.first != project.license.last %}
+			licenses
+		{% else %}
+			license
+		{% endif %}
 		{% else %}
 		Open source
 		{% endif %}
