@@ -1,59 +1,58 @@
 <div class="project-info">
 	<div class="project-name">
 		{{ project.name }}
-		{% if project.technology %}
-		<div class="project-technology">
-			{% for tech in project.technology %}
-			<div class="project-technology-item">
-				<div class="project-technology-icon bg-{{ tech | replace: "+", "p" | replace: "#", "s" | replace: " ", "-" | downcase }}"></div>
-				{{ tech }}
-			</div>
-			{% endfor %}
-		</div>
-		{% endif %}
 	</div>
-	{% if project.award %}
-	<div class="project-award">
-		<i class="fa fa-fw fa-trophy"></i>
-		{{ project.award }}
-	</div>
-	{% endif %}
-	{% if project.license %}
-	<div class="project-oss">
-		<i class="fa fa-fw fa-gavel"></i>
-		{% if project.license != "" %}
-		Open source under the
-			{% for license in project.license %}
-				{{ license }}
-				{% if project.license.first != project.license.last and license != project.license.last %}
-				 and 
-				{% endif %}
-			{% endfor %}
-		{% if project.license.first != project.license.last %}
-			licenses
-		{% else %}
-			license
-		{% endif %}
-		{% else %}
-		Open source
-		{% endif %}
-	</div>
-	{% endif %}
-	{% if project.archived %}
-	<div class="project-archived">
-		<i class="fa fa-fw fa-archive"></i>
-		Archived project
-		{% if project.archived != "" %}
-		({{ project.archived }})
-		{% endif %}
+	{% if project.technology %}
+	<div class="project-technology">
+		{% for tech in project.technology %}<div class="project-technology-item">
+			<div class="project-technology-icon bg-{{ tech | replace: "+", "p" | replace: "#", "s" | replace: " ", "-" | downcase }}"></div>{{ tech }}
+		</div>{% endfor %}
 	</div>
 	{% endif %}
 	<div class="project-details">
 		{{ project.details_front }}
 	</div>
+	<div class="project-facts">
+		{% if project.award %}
+		<div class="project-fact project-award">
+			<i class="fa fa-fw fa-trophy"></i>
+			{{ project.award }}
+		</div>
+		{% endif %}
+		{% if project.license %}
+		<div class="project-fact project-oss">
+			<i class="fa fa-fw fa-gavel"></i>
+			{% if project.license != "" %}
+			Open source under the
+				{% for license in project.license %}
+					{{ license }}
+					{% if project.license.first != project.license.last and license != project.license.last %}
+					and 
+					{% endif %}
+				{% endfor %}
+			{% if project.license.first != project.license.last %}
+				licenses
+			{% else %}
+				license
+			{% endif %}
+			{% else %}
+			Open source
+			{% endif %}
+		</div>
+		{% endif %}
+		{% if project.archived %}
+		<div class="project-fact project-archived">
+			<i class="fa fa-fw fa-archive"></i>
+			Archived project
+			{% if project.archived != "" %}
+			({{ project.archived }})
+			{% endif %}
+		</div>
+		{% endif %}
+	</div>
 	<div class="project-actions">
 		{% if project.go_url %}
-		<a href="{{ project.go_url }}" class="btn btn-primary" target="_blank">Go there</a>
+		<a href="{{ project.go_url }}" class="btn btn-primary" target="_blank">Go there <i class="fa fa-arrow-right"></i></a>
 		{% endif %}
 
 		{% if project.app_store_url %}

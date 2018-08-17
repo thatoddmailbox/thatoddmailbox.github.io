@@ -13,14 +13,14 @@
 	background: #ddd;
 }
 .project.feature {
-	background-position: center bottom;
+	background-position: left bottom;
 	background-size: cover;
 	border-radius: 5px;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
 	box-sizing: border-box;
 	margin: 0 1rem 2rem 1rem;
 	flex-basis: calc(50% - 2rem);
-	height: 400px;
+	height: 25rem;
 	position: relative;
 }
 .project.feature.hackydaltontabthing {
@@ -38,7 +38,7 @@
 
 	z-index: -1;
 
-	background-position: center bottom;
+	background-position: left bottom;
 	background-size: cover;
 
 	-webkit-filter: blur(10px);
@@ -50,8 +50,8 @@
 .project.feature .project-expand-content {
 	display: none;
 }
-.project.feature .project-technology {
-	margin-left: 0;
+.project.feature .project-name {
+	font-size: 1.5rem;
 }
 
 .project-feature-overlay {
@@ -67,7 +67,7 @@
 	background: rgba(0, 0, 0, 0.8);
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
-	padding: 10px;
+	padding: 1rem;
 	z-index: 1;
 }
 
@@ -83,32 +83,39 @@
 	max-width: 250px;
 }
 .project-name {
-	font-size: 24px;
+	font-size: 1.25rem;
+	font-weight: bold;
+	margin-bottom: 0.25rem;
 }
 .project-technology {
 	display: inline-block;
 	font-size: 14px;
-	margin-left: 5px;
+	font-weight: 100;
 }
 .project-technology-item {
 	display: inline-block;
-	margin-right: 5px;
+	margin-right: 0.4rem;
 }
 .project-technology-icon {
 	border-radius: 100%;
 	display: inline-block;
-	width: 12px;
-	height: 12px;
+	width: 0.8rem;
+	height: 0.8rem;
+	margin-right: 0.3rem;
 }
-.project-archived, .project-award, .project-oss {
-	font-size: 14px;
+.project-fact {
+	font-size: 0.8rem;
+	font-weight: 100;
 }
 .project-details {
-	margin-top: 5px;
-	margin-bottom: 5px;
+	margin-top: 0.25rem;
+}
+.project-facts {
+	margin-top: 0.25rem;
 }
 .project-actions {
 	height: 40px;
+	margin-top: 0.5rem;
 }
 .project-actions .btn {
 	display: block;
