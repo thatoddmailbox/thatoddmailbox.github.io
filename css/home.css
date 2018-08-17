@@ -1,16 +1,44 @@
-.home-jumbotron {
-	text-align: center;
+.home-container {
+	padding: 0 4rem;
+	width: 100%;
+}
+
+.home-avatar {
+	display: inline-block;
+	width: 8rem;
+	vertical-align: top;
+}
+
+.home-avatar img {
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+	width: 8rem;
+	vertical-align: text-top;
+}
+
+.home-info {
+	display: inline-block;
+	width: 40rem;
+	margin-left: 1rem;
 }
 
 .home-name {
-	font-size: 52px;
+	font-size: 3rem;
+	margin: 0;
 }
 
 .home-details {
-	font-size: 24px;
+	font-size: 1.5rem;
+	margin: 0.25rem 0 0 0;
 }
 
 .home-links {
-	font-size: 18px;
-	margin-top: 10px;
+	font-size: 1rem;
+	margin: 0.5rem 0;
+}
+
+.home-actions {
+	margin-top: 0.75rem;
+}
+.home-actions .btn {
+	margin-right: 1rem;
 }
