@@ -3,6 +3,8 @@ collections:
     output: true
     permalink: /project_info/:name
 
+exclude: [vendor]
+
 navigation:
 - name: Home
   url: /
