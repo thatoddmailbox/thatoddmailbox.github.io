@@ -1,3 +1,7 @@
+.jumbotron {
+	margin-bottom: 0;
+}
+
 .home-container {
 	padding: 0 4rem;
 	width: 100%;
@@ -36,9 +40,22 @@
 	margin: 0.5rem 0;
 }
 
-.home-actions {
-	margin-top: 0.75rem;
+.hero {
+	background-size: cover;
+	background-position: center;
+	padding: 3rem 0;
 }
-.home-actions .btn {
-	margin-right: 1rem;
+
+.hero-text {
+	background: rgba(0, 0, 0, 0.75);
+	color: white;
+	padding: 1rem;
+}
+
+#made {
+	background-image: url(/assets/computer/computer.jpg);
+}
+
+#written {
+	background-image: url(/assets/iotaseed/seedgen.png);
 }
