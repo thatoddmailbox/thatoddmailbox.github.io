@@ -1,7 +1,7 @@
 .post-details {
 	margin-bottom: 8px;
 }
-.post img {
+.post img, .post video {
 	width: 100%;
 }
 .post .img-side {
