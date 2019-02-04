@@ -8,3 +8,20 @@
 	float: left;
 	width: auto;
 }
+.h2, h2 {
+	clear: both;
+}
+.post-image {
+	width: initial;
+	margin: 0.25rem;
+}
+.post-image-right {
+	float: right;
+	clear: right;
+}
+.post-image img {
+	width: initial;
+}
+.post-image figcaption {
+	font-style: italic;
+}
