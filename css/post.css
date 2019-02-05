@@ -27,3 +27,17 @@
 	margin-top: 0.5rem;
 	text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+	.post-image, .post-image-right {
+		display: block;
+		float: none;
+		clear: both;
+		width: 100%;
+	}
+	.post-image img {
+		display: block;
+		margin: 0 auto;
+		max-width: 100% !important;
+	}
+}
