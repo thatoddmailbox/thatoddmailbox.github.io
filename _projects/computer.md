@@ -6,6 +6,8 @@ details_front: A microcomputer, built from Soviet-era parts, designed for a Hist
 index: 2
 feature: true
 
+go_label: "Read blog post"
+go_url: https://thatoddmailbox.github.io/2019/02/04/computer
 github: https://github.com/thatoddmailbox/computer
 license: ['MIT', 'CERN OHL']
 

@@ -52,7 +52,7 @@
 	</div>
 	<div class="project-actions">
 		{% if project.go_url %}
-		<a href="{{ project.go_url }}" class="btn btn-primary" target="_blank">Go there <i class="fa fa-arrow-right"></i></a>
+		<a href="{{ project.go_url }}" class="btn btn-primary" target="_blank">{{ project.go_label | default: "Go there" }} <i class="fa fa-arrow-right"></i></a>
 		{% endif %}
 
 		{% if project.app_store_url %}
