@@ -71,16 +71,18 @@
 		<a href="{{ link.url }}" class="btn btn-outline-info" target="_blank"><i class="fa fa-{{ link.icon }}"></i> {{ link.name }}</a>
 		{% endfor %}
 	</div>
-	{% unless project.small or project.feature %}
+	{% unless project.small or project.feature or project.hide_read_more %}
 		<div class="project-expand-trigger">
 			<button class="btn btn-sm btn-outline-primary"><i class="fa fa-chevron-down"></i> read <span>more</span></button>
 		</div>
 	{% endunless %}
 
 	{% if project.feature %}
-		<div class="project-expand-trigger">
-			<button class="btn btn-sm btn-outline-primary popup">read more <i class="fa fa-arrow-right"></i></button>
-		</div>
+		{% unless project.hide_read_more %}
+			<div class="project-expand-trigger">
+				<button class="btn btn-sm btn-outline-primary popup">read more <i class="fa fa-arrow-right"></i></button>
+			</div>
+		{% endunless %}
 	{% endif %}
 
 	{% unless project.small %}
