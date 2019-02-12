@@ -3,7 +3,7 @@ layout: project
 
 name: tasky
 details_front: A minimalistic to-do list website and Android app, both of which use MyHomeworkSpace to synchronize their data.
-index: 1
+index: 2
 
 links:
 - icon: github
