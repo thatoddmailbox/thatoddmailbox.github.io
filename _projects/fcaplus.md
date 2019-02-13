@@ -3,8 +3,8 @@ layout: project
 
 name: FCAPlus
 details_front: A series of patches for the FirstClass Android app that improve the app's usability and fix various bugs.
-small: true
-index: 1
+index: 2
+hide_read_more: true
 
 github: https://github.com/thatoddmailbox/FCAPlus
 license: MIT
