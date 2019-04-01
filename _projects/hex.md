@@ -7,7 +7,7 @@ details_front: A "next-generation programming language". (it's supposed to be a 
 small: true
 index: 7
 
-go_url: https://thatoddmailbox.github.io/hex
+go_url: https://alex.studer.dev/hex
 github: https://github.com/thatoddmailbox/hex
 license: MIT
 

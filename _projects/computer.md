@@ -7,7 +7,7 @@ index: 2
 feature: true
 
 go_label: "Read blog post"
-go_url: https://thatoddmailbox.github.io/2019/02/04/computer
+go_url: https://alex.studer.dev/2019/02/04/computer
 github: https://github.com/thatoddmailbox/computer
 license: ['MIT', 'CERN OHL']
 
