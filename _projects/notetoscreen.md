@@ -3,7 +3,7 @@ layout: project
 
 name: NoteToScreen
 details_front: A website that lets you save paper notes in the cloud, share them with others, and access them anywhere.
-index: 1
+index: 2
 feature: true
 
 go_url: https://notetoscreen.com

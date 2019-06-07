@@ -6,6 +6,7 @@ details_front: A replacement for your new tab page that provides you with at-a-g
 award: 1st place at <a href="http://web.archive.org/web/20170707221701/http://www.tigerhacks.com/">TigerHacks 2015</a> hackathon
 index: 4
 feature: true
+center_bg: true
 
 go_url: https://chrome.google.com/webstore/detail/daltontab/ggfjkmflbbjndabmnngilkfpmdegbfkm
 github: https://github.com/ULTIMATHEXERS/DaltonTab

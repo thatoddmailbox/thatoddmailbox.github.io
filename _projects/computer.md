@@ -4,8 +4,9 @@ layout: project
 name: computer
 details_front: A microcomputer, built from Soviet-era parts, designed for a History research project concerning the development of technology behind the Iron Curtain.
 press: Featured in <a href="https://hackaday.com/2019/02/07/in-soviet-russia-computer-programs-you/" target="_blank">Hackaday</a> and <a href="https://blog.hackster.io/bringing-the-cold-war-back-with-soviet-era-microcomputer-replica-bc247a233b1f" target="_blank">hackster.io</a>
-index: 2
+index: 1
 feature: true
+center_bg: true
 
 go_label: "Read blog post"
 go_url: https://alex.studer.dev/2019/02/04/computer

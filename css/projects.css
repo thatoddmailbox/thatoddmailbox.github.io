@@ -17,17 +17,20 @@
 	background-size: cover;
 	border-radius: 5px;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-	box-sizing: border-box;
-	margin: 0 1rem 2rem 1rem;
+	margin-bottom: 1rem;
+	min-height: auto;
 	flex-basis: calc(50% - 2rem);
-	height: 25rem;
+	padding: 0;
 	position: relative;
 }
-.project.feature.hackydaltontabthing {
-	background-position: center -100px;
+.project.feature .row {
+	margin: 0;
+}
+.project.feature .row .col-md-3, .project.feature .row .col-md-9 {
+	padding: 0;
 }
 
-.project.feature .blurry-background {
+.project.feature .background {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -40,32 +43,27 @@
 
 	background-position: left bottom;
 	background-size: cover;
-
-	-webkit-filter: blur(10px);
-	-moz-filter: blur(10px);
-	-o-filter: blur(10px);
-	-ms-filter: blur(10px);
-	filter: blur(10px);
+}
+.project.feature .background.background-centered {
+	background-position: center;
 }
 .project.feature .project-expand-content {
 	display: none;
 }
 .project.feature .project-name {
-	font-size: 1.5rem;
+	font-size: 1.75rem;
+}
+.project.feature {
+	font-size: 1.1rem;
+}
+.project.feature .project-fact, .project.feature .project-technology-item {
+	font-size: 0.9rem;
 }
 
-.project-feature-overlay {
-	color: white;
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	height: auto;
-	z-index: 1;
-}
-.project-feature-overlay .project-feature-overlay-info {
+.project-feature-info {
 	background: rgba(0, 0, 0, 0.8);
-	border-bottom-left-radius: 5px;
+	color: white;
+	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
 	padding: 1rem;
 	z-index: 1;

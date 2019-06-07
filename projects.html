@@ -7,21 +7,23 @@ js: /js/projects.js
 {% assign projects_sorted = site.projects | sort: 'index', 'last' %}
 
 <div class="container">
-	<div class="row">
-		{% for project in projects_sorted %}
-		{% if project.feature != true %}
-		{% continue %}
-		{% endif %}
-		<div class="project feature col-md-6 {% if project.name == 'DaltonTab' %}hackydaltontabthing{% endif %}" style="background-image: url(/img/{{ project.path | replace: "_", "" | replace: ".md", ".png" }})">
-			<div class="project-feature-overlay">
-				<div class="blurry-background" style="background-image: url(/img/{{ project.path | replace: "_", "" | replace: ".md", ".png" }})"></div>
-				<div class="project-feature-overlay-info">
+	{% for project in projects_sorted %}
+	{% if project.feature != true %}
+	{% continue %}
+	{% endif %}
+	<div class="project feature">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="background {% if project.center_bg %}background-centered{% endif %}" style="background-image: url(/img/{{ project.path | replace: "_", "" | replace: ".md", ".png" }})"></div>
+			</div>
+			<div class="col-md-9">
+				<div class="project-feature-info">
 					{% include project_info.html %}
 				</div>
 			</div>
 		</div>
-		{% endfor %}
 	</div>
+	{% endfor %}
 </div>
 
 <div class="container">
