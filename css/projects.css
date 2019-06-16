@@ -59,6 +59,18 @@
 .project.feature .project-fact, .project.feature .project-technology-item {
 	font-size: 0.9rem;
 }
+.project.feature .btn-outline-primary, .project.feature .btn-outline-info {
+	border-color: white;
+	color: white;
+}
+.project.feature .btn-outline-primary:hover, .project.feature .btn-outline-info:hover {
+	background-color: white;
+	color: black;
+}
+
+.project.feature .project-facts a {
+	color: #a6a6a6;
+}
 
 .project-feature-info {
 	background: rgba(0, 0, 0, 0.8);
