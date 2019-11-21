@@ -16,9 +16,9 @@ license: MIT
 
 technology:
 - "Java"
+- "JavaScript"
 - "HTML"
 - "CSS"
-- "JavaScript"
 ---
 # What is it?
 tasky is a minimialistic service that let you keep a series of to-do lists. All of your data is stored in MyHomeworkSpace, meaning that the apps themselves are entirely client-side and just need you to grant access to your MyHomeworkSpace accounts.
