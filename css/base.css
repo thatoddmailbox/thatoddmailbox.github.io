@@ -17,7 +17,7 @@
 	background: #f34b7d;
 }
 .bg-go {
-	background: #375eab;
+	background: #7fd5ea;
 }
 .bg-html {
 	background: #e44b23;
@@ -39,6 +39,9 @@
 }
 .bg-swift {
 	background: #ffac45;
+}
+.bg-typescript {
+	background: #2b7489;
 }
 .bg-z80-assembly {
 	background: #6e4c13;
