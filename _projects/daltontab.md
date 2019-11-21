@@ -4,7 +4,7 @@ layout: project
 name: DaltonTab
 details_front: A replacement for your new tab page that provides you with at-a-glance information about your upcoming classes and homework.
 award: 1st place at <a href="http://web.archive.org/web/20170707221701/http://www.tigerhacks.com/" target="_blank">TigerHacks 2015</a> hackathon
-index: 4
+index: 5
 feature: true
 center_bg: true
 
