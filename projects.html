@@ -14,7 +14,7 @@ js: /js/projects.js
 	<div class="project feature">
 		<div class="row">
 			<div class="col-md-3">
-				<div class="background {% if project.center_bg %}background-centered{% endif %}" style="background-image: url(/img/{{ project.path | replace: "_", "" | replace: ".md", ".png" }})"></div>
+				<div class="background {% if project.big_bg %}background-big{% endif %} {% if project.center_bg %}background-centered{% endif %}" style="background-image: url(/img/{{ project.path | replace: "_", "" | replace: ".md", ".png" }})"></div>
 			</div>
 			<div class="col-md-9">
 				<div class="project-feature-info">

@@ -5,6 +5,7 @@ name: NoteToScreen
 details_front: A website that lets you save paper notes in the cloud, share them with others, and access them anywhere.
 index: 2
 feature: true
+big_bg: true
 
 go_url: https://notetoscreen.com
 app_store_url: https://itunes.apple.com/us/app/notetoscreen/id1292401613?mt=8

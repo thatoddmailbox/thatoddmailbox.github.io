@@ -13,8 +13,6 @@
 	background: #ddd;
 }
 .project.feature {
-	background-position: left bottom;
-	background-size: cover;
 	border-radius: 5px;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
 	margin-bottom: 1rem;
@@ -41,8 +39,11 @@
 
 	z-index: -1;
 
-	background-position: left bottom;
+	background-position: left top;
 	background-size: cover;
+}
+.project.feature .background.background-big {
+	background-size: 250%;
 }
 .project.feature .background.background-centered {
 	background-position: center;
@@ -77,6 +78,7 @@
 	color: white;
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
+	min-height: 250px;
 	padding: 1rem;
 	z-index: 1;
 }
