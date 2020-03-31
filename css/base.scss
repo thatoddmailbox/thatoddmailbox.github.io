@@ -1,3 +1,5 @@
+---
+---
 .bg-arduino {
 	background: #bd79d1;
 }
@@ -88,6 +90,32 @@ noscript {
 
 nav.navbar {
 	font-family: proxima-nova, sans-serif;
+	display: block;
+	line-height: 1.2;
+
+	.navbar-group {
+		margin: 0 auto;
+		width: 20rem;
+
+		.navbar-brand {
+			display: inline-block;
+			font-size: 1.5rem;
+			text-align: center;
+			width: 100%;
+		}
+		.navbar-nav {
+			font-size: 1rem;
+			margin: 0 auto;
+			justify-content: center;
+
+			li:first-child a {
+				padding-left: 0;
+			}
+			li:last-child a {
+				padding-right: 0;
+			}
+		}
+	}
 }
 
 .title {
