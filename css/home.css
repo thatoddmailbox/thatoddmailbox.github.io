@@ -52,6 +52,10 @@
 	padding: 1rem;
 }
 
+.hero-text h2 {
+	font-weight: 600;
+}
+
 #made {
 	background-image: url(/assets/computer/computer.jpg);
 }
