@@ -10,7 +10,7 @@
 	</div>
 	{% endif %}
 	<div class="project-details">
-		{{ project.details_front | markdownify }}
+		{{ project.details_front | markdownify | remove: '<p>' | remove: '</p>' }}
 	</div>
 	<div class="project-facts">
 		{% if project.award %}
@@ -23,6 +23,12 @@
 		<div class="project-fact project-press">
 			<i class="fas fa-fw fa-newspaper"></i>
 			{{ project.press }}
+		</div>
+		{% endif %}
+		{% if project.collab %}
+		<div class="project-fact project-collab">
+			<i class="fas fa-fw fa-user-friends"></i>
+			{{ project.collab | markdownify | remove: '<p>' | remove: '</p>' }}
 		</div>
 		{% endif %}
 		{% if project.license %}
