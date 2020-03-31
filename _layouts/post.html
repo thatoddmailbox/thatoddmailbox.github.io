@@ -4,7 +4,7 @@ include_post_css: true
 ---
 <div class="container post">
 	<div class="post-details">
-		<i class="fas fa-calendar-alt"></i> Published {{ page.date | date: "%B %-d, %Y"  }}
+		<i class="fas fa-calendar-alt"></i> {{ page.date | date: "%B %-d, %Y"  }}
 	</div>
 	{{ content }}
 </div>

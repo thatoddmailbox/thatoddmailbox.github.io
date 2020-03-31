@@ -13,7 +13,9 @@
 	<link rel="stylesheet" href="/css/all.min.css" />
 	<link rel="stylesheet" href="/css/highlight.css" />
 	<link rel="stylesheet" href="/css/base.css" />
+	{% if page.include_post_css or layout.include_post_css %}
 	<link rel="stylesheet" href="/css/post.css" />
+	{% endif %}
 	{% if page.css %}
 	<link rel="stylesheet" href="{{ page.css }}" />
 	{% endif %}
