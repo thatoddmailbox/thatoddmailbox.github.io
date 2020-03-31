@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $(".project-expand-trigger .btn").click(function() {
         var $button = $(this);
-        var $buttonIcon = $button.find(".fa");
+        var $buttonIcon = $button.find(".fas");
         var $buttonActionText = $button.find("span");
         var $projectInfo = $button.parent().parent();
         var $projectName = $projectInfo.find(".project-name");

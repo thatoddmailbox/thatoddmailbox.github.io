@@ -15,19 +15,19 @@
 	<div class="project-facts">
 		{% if project.award %}
 		<div class="project-fact project-award">
-			<i class="fa fa-fw fa-trophy"></i>
+			<i class="fas fa-fw fa-trophy"></i>
 			{{ project.award }}
 		</div>
 		{% endif %}
 		{% if project.press %}
 		<div class="project-fact project-press">
-			<i class="fa fa-fw fa-newspaper-o"></i>
+			<i class="fas fa-fw fa-newspaper"></i>
 			{{ project.press }}
 		</div>
 		{% endif %}
 		{% if project.license %}
 		<div class="project-fact project-oss">
-			<i class="fa fa-fw fa-gavel"></i>
+			<i class="fas fa-fw fa-gavel"></i>
 			{% if project.license != "" %}
 			Open source under the
 				{% for license in project.license %}
@@ -48,7 +48,7 @@
 		{% endif %}
 		{% if project.archived %}
 		<div class="project-fact project-archived">
-			<i class="fa fa-fw fa-archive"></i>
+			<i class="fas fa-fw fa-archive"></i>
 			Archived project
 			{% if project.archived != "" %}
 			({{ project.archived }})
@@ -58,7 +58,7 @@
 	</div>
 	<div class="project-actions">
 		{% if project.go_url %}
-		<a href="{{ project.go_url }}" class="btn btn-primary" target="_blank">{{ project.go_label | default: "Go there" }} <i class="fa fa-arrow-right"></i></a>
+		<a href="{{ project.go_url }}" class="btn btn-primary" target="_blank">{{ project.go_label | default: "Go there" }} <i class="fas fa-arrow-right"></i></a>
 		{% endif %}
 
 		{% if project.app_store_url %}
@@ -70,23 +70,23 @@
 		{% endif %}
 
 		{% if project.github %}
-		<a href="{{ project.github }}" class="btn btn-outline-info" target="_blank"><i class="fa fa-github"></i> View source</a>
+		<a href="{{ project.github }}" class="btn btn-outline-info" target="_blank"><i class="fab fa-github"></i> View source</a>
 		{% endif %}
 
 		{% for link in project.links %}
-		<a href="{{ link.url }}" class="btn btn-outline-info" target="_blank"><i class="fa fa-{{ link.icon }}"></i> {{ link.name }}</a>
+		<a href="{{ link.url }}" class="btn btn-outline-info" target="_blank"><i class="fab fa-{{ link.icon }}"></i> {{ link.name }}</a>
 		{% endfor %}
 	</div>
 	{% unless project.small or project.feature or project.hide_read_more %}
 		<div class="project-expand-trigger">
-			<button class="btn btn-sm btn-outline-primary"><i class="fa fa-chevron-down"></i> read <span>more</span></button>
+			<button class="btn btn-sm btn-outline-primary"><i class="fas fa-chevron-down"></i> read <span>more</span></button>
 		</div>
 	{% endunless %}
 
 	{% if project.feature %}
 		{% unless project.hide_read_more %}
 			<div class="project-expand-trigger">
-				<button class="btn btn-sm btn-outline-primary popup">read more <i class="fa fa-arrow-right"></i></button>
+				<button class="btn btn-sm btn-outline-primary popup">read more <i class="fas fa-arrow-right"></i></button>
 			</div>
 		{% endunless %}
 	{% endif %}

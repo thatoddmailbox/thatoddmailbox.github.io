@@ -1,6 +1,7 @@
 ---
 title: Posts
 layout: base
+include_post_css: true
 rss: "/feed.xml"
 ---
 <div class="container">
@@ -8,7 +9,7 @@ rss: "/feed.xml"
 	<div class="post-info">
 		<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 		<div class="post-details">
-			<span class="date"><i class="fa fa-clock-o"></i> Published {{ post.date | date: "%B %-d, %Y" }}</span>
+			<span class="date"><i class="fas fa-calendar-alt"></i> Published {{ post.date | date: "%B %-d, %Y" }}</span>
 		</div>
 		<div class="content">
 			{{ post.excerpt }}
