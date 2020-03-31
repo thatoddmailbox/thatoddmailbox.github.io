@@ -10,7 +10,7 @@
 	</div>
 	{% endif %}
 	<div class="project-details">
-		{{ project.details_front }}
+		{{ project.details_front | markdownify }}
 	</div>
 	<div class="project-facts">
 		{% if project.award %}
