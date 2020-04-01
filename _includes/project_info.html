@@ -2,6 +2,11 @@
 	<div class="project-name">
 		{{ project.name }}
 	</div>
+	{% if project.subtitle %}
+	<div class="project-subtitle">
+		{{ project.subtitle }}
+	</div>
+	{% endif %}
 	{% if project.technology %}
 	<div class="project-technology">
 		{% for tech in project.technology %}<div class="project-technology-item">

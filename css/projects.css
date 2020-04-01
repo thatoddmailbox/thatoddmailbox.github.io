@@ -60,25 +60,10 @@
 	font-size: 1.1rem;
 }
 .project.feature .project-fact, .project.feature .project-technology-item {
-	font-size: 0.9rem;
-}
-.project.feature .btn-outline-primary, .project.feature .btn-outline-info {
-	border-color: white;
-	color: white;
-}
-.project.feature .btn-outline-primary:hover, .project.feature .btn-outline-info:hover {
-	background-color: white;
-	color: black;
-}
-
-.project.feature .project-facts a {
-	color: #a6a6a6;
-	text-decoration: underline;
+	font-size: 1rem;
 }
 
 .project-feature-info {
-	background: rgba(0, 0, 0, 0.8);
-	color: white;
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
 	min-height: 250px;
@@ -100,18 +85,22 @@
 .project-name {
 	display: inline-block;
 	font-family: proxima-nova, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	font-size: 1.2rem;
+	font-size: 1.25rem;
 	font-weight: bold;
 	line-height: 1.25;
 }
 .project-subtitle {
 	display: inline-block;
 	font-style: italic;
+	font-size: 1.3rem;
+	/* margin-left: 0.5rem; */
+}
+.project-subtitle:before {
+	content: "\2014";
 }
 .project-technology {
 	display: block;
-	font-family: proxima-nova, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	font-size: 14px;
+	font-size: 1rem;
 	font-weight: 300;
 }
 .project-technology-item {
@@ -126,14 +115,13 @@
 	margin-right: 0.3rem;
 }
 .project-details {
-	margin-top: 0.25rem;
+	margin-top: 0.1rem;
 }
 .project-facts {
 	font-family: proxima-nova, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	margin-top: 0.25rem;
 }
 .project-fact {
-	font-size: 0.8rem;
 	font-weight: 400;
 }
 .project-actions {
