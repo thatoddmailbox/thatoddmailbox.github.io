@@ -5,6 +5,8 @@
 .home-container {
 	padding: 0 4rem;
 	width: 100%;
+	z-index: 1;
+	position: relative;
 }
 
 .home-avatar {
@@ -26,7 +28,7 @@
 }
 
 .home-name {
-	font-size: 3rem;
+	font-size: 2.75rem;
 	margin: 0;
 }
 
@@ -43,12 +45,27 @@
 .hero {
 	background-size: cover;
 	background-position: center;
+	color: white;
 	padding: 3rem 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.hero::before {
+	background-color: rgba(0, 0, 0, 0.6);
+	content: "";
+	position: absolute;
+	box-sizing: content-box;
+	top: -3rem;
+	left: -3rem;
+	padding: 3rem;
+	width: 100%;
+	height: 100%;
+	transition: background-color 0.1s ease-in-out;
+	z-index: 0;
 }
 
 .hero-text {
-	background: rgba(0, 0, 0, 0.6);
-	color: white;
 	padding: 1rem;
 }
 
@@ -62,4 +79,83 @@
 
 #written {
 	background-image: url(/assets/iotaseed/seedgen.png);
+}
+
+@media (min-width: 1275px) {
+	.home-group {
+		background: #e9ecef;
+		overflow: hidden;
+		position: relative;
+		max-width: 1600px;
+		margin: 0 auto;
+		width: 100%;
+		height: 23rem;
+	}
+
+	.home-container {
+		padding: 0;
+		width: auto;
+	}
+
+	.jumbotron .home-container {
+		padding-left: 2rem;
+	}
+
+	.home-info {
+		width: auto;
+	}
+
+	.jumbotron, .hero {
+		box-sizing: content-box;
+		display: block;
+		position: absolute;
+		top: 0;
+		width: 34%;
+		height: 20rem;
+	}
+
+	#made {
+		left: 30%;
+	}
+
+	#written {
+		left: 63%;
+		padding-right: 5rem;
+	}
+
+	.hero {
+		clip-path: polygon(
+			10% 0, /* left top */
+			100% 0, /* right top */ 
+			90% 100%, /* right bottom */
+			0 100% /* left bottom */
+		);
+		cursor: pointer;
+		padding: 3rem 3rem;
+		background-size: 120%;
+		transition: background-size 0.1s ease-in-out;
+	}
+
+	.hero:hover {
+		background-size: 175%;
+	}
+
+	.hero:hover::before {
+		background-color: rgba(68, 69, 70, 0.6);
+	}
+
+	.hero:hover .btn-outline-light {
+		color: #212529;
+		background-color: #f8f9fa;
+		border-color: #f8f9fa;
+	}
+
+	.hero .home-container {
+		overflow: hidden;
+	}
+	.hero .hero-text {
+		padding: 1rem 3rem;
+		position: relative;
+		left: -2rem;
+	}
 }
