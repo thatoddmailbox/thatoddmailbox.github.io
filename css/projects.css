@@ -157,10 +157,12 @@
 }
 
 .project-expand-content {
+	line-height: 1.7;
 	padding-top: 10px;
 	overflow: hidden;
 	transition: 0.2s max-height;
 }
 .project-expand-content h1 {
-	font-size: 22px;
+	font-size: 1.4rem;
+	margin-top: 0.5rem;
 }
