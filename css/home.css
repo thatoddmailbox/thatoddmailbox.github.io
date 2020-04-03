@@ -11,6 +11,8 @@
 
 .home-avatar {
 	display: inline-block;
+	margin-right: 1rem;
+	margin-bottom: 1rem;
 	width: 8rem;
 	vertical-align: top;
 }
@@ -23,8 +25,7 @@
 
 .home-info {
 	display: inline-block;
-	width: 40rem;
-	margin-left: 1rem;
+	width: 20rem;
 }
 
 .home-name {
