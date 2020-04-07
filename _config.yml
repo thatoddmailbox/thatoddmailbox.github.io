@@ -15,6 +15,7 @@ navigation:
 
 paginate: 5
 paginate_path: "/posts/:num/"
+title: "Alex Studer"
 url: "https://alex.studer.dev"
 
 plugins:
