@@ -17,6 +17,7 @@ paginate: 5
 paginate_path: "/posts/:num/"
 title: "Alex Studer"
 url: "https://alex.studer.dev"
+permalink: /:categories/:year/:month/:day/:title
 
 plugins:
 - jekyll-feed
