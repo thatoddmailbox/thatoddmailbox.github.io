@@ -6,7 +6,6 @@ subtitle: Part tracking made easy.
 details_front: A website that makes it easy to track and organize electronic components.
 index: 3
 feature: true
-big_bg: true
 
 hide_read_more: true
 
