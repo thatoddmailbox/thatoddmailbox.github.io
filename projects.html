@@ -58,7 +58,7 @@ js: /js/projects.js
 		<div class="{% if project.index < 3 %}col-md-4{% else %}col-md-4{% endif %}">
 			{% include project_info.html %}
 		</div>
-		{% if project.index == 3 %}
+		{% if project.index == 3 or project.index == 6 %}
 			</div>
 			<div class="row project-small-row">
 		{% endif %}
