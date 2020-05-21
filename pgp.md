@@ -4,7 +4,7 @@ layout: page
 css: /css/home.css
 js: /js/home.js
 ---
-My email address ([alex@studer.dev](mailto:alex@studer.dev)) supports the[Web Key Directory](https://wiki.gnupg.org/WKD) standard. That means that compatible mail clients will automatically locate my key, and, in modern versions of gpg, you can do `gpg --locate-keys alex@studer.dev`.
+My email address ([alex@studer.dev](mailto:alex@studer.dev)) supports the [Web Key Directory](https://wiki.gnupg.org/WKD) standard. That means that compatible mail clients will automatically locate my key, and, in modern versions of gpg, you can do `gpg --locate-keys alex@studer.dev`.
 
 If that doesn't work, my PGP key ID is `0x03906C0E0E1E6707`, so you can download my public key by doing `gpg --recv-keys 0x03906C0E0E1E6707`.
 
