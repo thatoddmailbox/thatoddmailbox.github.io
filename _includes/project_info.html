@@ -10,7 +10,7 @@
 	{% if project.technology %}
 	<div class="project-technology">
 		{% for tech in project.technology %}<div class="project-technology-item">
-			<div class="project-technology-icon bg-{{ tech | split: "(" | first | strip | replace: "+", "p" | replace: "#", "s" | replace: " ", "-" | downcase }}"></div>{{ tech }}
+			<div class="project-technology-icon bg-{{ tech | split: "(" | first | strip | replace: "+", "p" | replace: "#", "s" | replace: " ", "-" | replace: ".", "-" | downcase }}"></div>{{ tech }}
 		</div>{% endfor %}
 	</div>
 	{% endif %}
