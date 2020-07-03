@@ -9,7 +9,7 @@ feature: true
 big_bg: true
 
 go_url: https://notetoscreen.com
-app_store_url: https://itunes.apple.com/us/app/notetoscreen/id1292401613?mt=8
+app_store_url: https://apps.apple.com/us/app/notetoscreen/id1292401613
 play_store_url: https://play.google.com/store/apps/details?id=com.notetoscreen.android
 
 technology:

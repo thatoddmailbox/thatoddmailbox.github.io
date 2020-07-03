@@ -5,13 +5,13 @@ name: DaltonTab
 subtitle: A cleaner new tab page.
 details_front: A replacement for your new tab page that provides you with at-a-glance information about your upcoming classes and homework.
 award: 1st place at <a href="http://web.archive.org/web/20170707221701/http://www.tigerhacks.com/" target="_blank">TigerHacks 2015</a> hackathon
-collab: Collaborated with [some friends](https://github.com/ULTIMATHEXERS/DaltonTab/graphs/contributors)
+collab: Collaborated with [some friends](https://github.com/MyHomeworkSpace/DaltonTab/graphs/contributors)
 index: 5
 feature: true
 center_bg: true
 
 go_url: https://chrome.google.com/webstore/detail/daltontab/ggfjkmflbbjndabmnngilkfpmdegbfkm
-github: https://github.com/ULTIMATHEXERS/DaltonTab
+github: https://github.com/MyHomeworkSpace/DaltonTab
 license: MIT
 
 technology:
