@@ -4,7 +4,7 @@ layout: project
 name: NoteToScreen
 subtitle: Your notes, anywhere.
 details_front: A website that lets you save paper notes in the cloud, share them with others, and access them anywhere.
-index: 2
+index: 3
 feature: true
 big_bg: true
 
