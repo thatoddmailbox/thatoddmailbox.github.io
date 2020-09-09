@@ -5,7 +5,7 @@ name: MyHomeworkSpace
 subtitle: A smart homework planner.
 details_front: A planner that lets you stay on top of your homework and tests&mdash;synced with the cloud, too, so you can access it anywhere you have an Internet connection.
 collab: Collaborated with [MyHomeworkSpace team](https://myhomework.space/about)
-index: 5
+index: 6
 feature: true
 big_bg: true
 
