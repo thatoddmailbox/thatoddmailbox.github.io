@@ -21,7 +21,7 @@ technology:
 - "CSS"
 ---
 # What is it?
-tasky is a minimialistic service that let you keep a series of to-do lists. All of your data is stored in MyHomeworkSpace, meaning that the apps themselves are entirely client-side and just need you to grant access to your MyHomeworkSpace accounts.
+tasky is a minimalistic service that let you keep a series of to-do lists. All of your data is stored in MyHomeworkSpace, meaning that the apps themselves are entirely client-side and just need you to grant access to your MyHomeworkSpace accounts.
 
 # Why was it made?
 There were two main reasons I wanted to create tasky: first, I needed a to-do list app, and second, it served as a test of the MyHomeworkSpace API. By building a relatively functional app, as simple as it may be, it made sure that there was nothing missing in the API and verified that it is possible to build something useful on top of MyHomeworkSpace.
