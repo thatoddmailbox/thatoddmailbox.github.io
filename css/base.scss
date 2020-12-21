@@ -1,79 +1,36 @@
 ---
 ---
-.bg-arduino {
-	background: #bd79d1;
-}
-.bg-assembly {
-	background: #6e4c13;
-}
-.bg-c {
-	background: #555555;
-}
-.bg-cs {
-	background: #178600;
-}
-.bg-css {
-	background: #563d7c;
-}
-.bg-cpp {
-	background: #f34b7d;
-}
-.bg-go {
-	background: #7fd5ea;
-}
-.bg-html {
-	background: #e44b23;
-}
-.bg-kicad {
-	background: #ca972e;
-}
-.bg-lua {
-	background: #000080;
-}
-.bg-metal {
-	background: #00ff9f;
-}
-.bg-java {
-	background: #b07219;
-}
-.bg-javascript {
-	background: #f1e05a;
-}
-.bg-objective-c {
-	background: #438eff;
-}
-.bg-objective-cpp {
-	background: #6866fb;
-}
-.bg-opengl {
-	background: #5381ac;
-}
-.bg-opengl-es {
-	background: #ba2a8d;
-}
-.bg-php {
-	background: #4f5d95;
-}
-.bg-python {
-	background: #3572a5;
-}
-.bg-rust {
-	background: #dea584;
-}
-.bg-smali {
-	background: #cccccc;
-}
-.bg-swift {
-	background: #ffac45;
-}
-.bg-three-js {
-	background: #444444;
-}
-.bg-typescript {
-	background: #2b7489;
-}
-.bg-z80-assembly {
-	background: #6e4c13;
+
+@each $name, $color in (
+	"arduino": "bd79d1",
+	"assembly": "6e4c13",
+	"c": "555555",
+	"cs": "178600",
+	"css": "563d7c",
+	"cpp": "f34b7d",
+	"go": "7fd5ea",
+	"html": "e44b23",
+	"kicad": "ca972e",
+	"lua": "000080",
+	"metal": "00ff9f",
+	"java": "b07219",
+	"javascript": "f1e05a",
+	"objective-c": "438eff",
+	"objective-cpp": "6866fb",
+	"opengl": "5381ac",
+	"opengl-es": "ba2a8d",
+	"php": "4f5d95",
+	"python": "3572a5",
+	"rust": "dea584",
+	"smali": "cccccc",
+	"swift": "ffac45",
+	"three-js": "444444",
+	"typescript": "2b7489",
+	"z80-assembly": "6e4c13"
+) {
+	.bg-#{$name} {
+		background: #{"#" + $color};
+	}
 }
 
 body {
