@@ -1,0 +1,20 @@
+name: Check site
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1.61.0
+      with:
+        bundler-cache: true
+
+    - uses: actions/checkout@v2
+
+    - name: Build and check the site
+      run: ./scripts/cibuild.sh
