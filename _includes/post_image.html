@@ -1,4 +1,4 @@
-<figure class="post-image post-image-right">
+<figure class="post-image post-image-{{ include.side | default: 'right' }}">
 	<a href="{{ include.url | absolute_url }}">
 		<img src="{{ include.url | absolute_url }}" title="{{ include.caption }}" alt="{{ include.caption }}" style="max-width: {{ include.max_width | default: 'initial' }};" />
 	</a>
