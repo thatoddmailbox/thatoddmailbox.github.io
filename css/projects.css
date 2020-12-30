@@ -131,12 +131,13 @@
 .project-actions .btn {
 	display: block;
 	float: left;
+	height: 38px;
 	margin-right: 5px;
 }
 .project-app-badge {
 	display: block;
 	float: left;
-	height: 40px;
+	height: 38px;
 	margin-right: 5px;
 	background-repeat: no-repeat;
 	background-size: cover;
