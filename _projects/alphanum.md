@@ -2,7 +2,7 @@
 layout: project
 
 name: alphanum
-details_front: A library for sorting lists of strings with the [alphanum algorithm](http://davekoelle.com/alphanum.html) in the Go programming language.
+details_front: A library for sorting lists of strings with the [alphanum algorithm](http://davekoelle.com/alphanum.html){:target="_blank"}{:rel="noopener noreferrer"} in the Go programming language.
 small: true
 index: 8
 

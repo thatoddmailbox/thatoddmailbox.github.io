@@ -2,7 +2,7 @@
 layout: project
 
 name: Zum Puzzler Pocket
-details_front: A Gameboy game I wrote for my sister, written entirely in LR35902 assembly with the [assembler](https://github.com/thatoddmailbox/gbasm) I wrote.
+details_front: A Gameboy game I wrote for my sister, written entirely in LR35902 assembly with the [assembler](https://github.com/thatoddmailbox/gbasm){:target="_blank"}{:rel="noopener noreferrer"} I wrote.
 index: 1
 
 go_label: "Play emulated version"

@@ -2,7 +2,7 @@
 layout: project
 
 name: FCAPlus
-details_front: A series of patches for the [FirstClass](https://en.wikipedia.org/wiki/FirstClass) Android app that improve the app's usability and fix various bugs.
+details_front: A series of patches for the [FirstClass](https://en.wikipedia.org/wiki/FirstClass){:target="_blank"}{:rel="noopener noreferrer"} Android app that improve the app's usability and fix various bugs.
 index: 3
 
 github: https://github.com/thatoddmailbox/FCAPlus
