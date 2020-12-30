@@ -55,10 +55,10 @@ js: /js/projects.js
 		{% continue %}
 		{% endif %}
 
-		<div class="{% if project.index < 3 %}col-md-4{% else %}col-md-3{% endif %}">
+		<div class="{% if project.index < 6 %}col-md-4{% else %}col-md-4{% endif %}">
 			{% include project_info.html %}
 		</div>
-		{% if project.index == 3 or project.index == 7 %}
+		{% if project.index == 3 or project.index == 6 or project.index == 9 %}
 			</div>
 			<div class="row project-small-row">
 		{% endif %}
