@@ -1,6 +1,6 @@
 <figure class="post-image post-image-{{ include.side | default: 'right' }}">
 	<a href="{{ include.url | absolute_url }}">
-		<img src="{{ include.url | absolute_url }}" title="{{ include.caption | escape }}" alt="{{ include.caption | escape }}" style="max-width: {{ include.max_width | default: 'initial' }};" />
+		<img src="{{ include.url | absolute_url }}" title="{{ include.caption | smartify | escape }}" alt="{{ include.caption | smartify | escape }}" style="max-width: {{ include.max_width | default: 'initial' }};" />
 	</a>
-	<figcaption>{{ include.caption }}</figcaption>
+	<figcaption>{{ include.caption | smartify }}</figcaption>
 </figure>
