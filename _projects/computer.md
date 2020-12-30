@@ -4,7 +4,7 @@ layout: project
 name: computer
 subtitle: An adventure in retrocomputing.
 details_front: A microcomputer, built from Soviet-era parts, designed for a History research project concerning the development of technology behind the Iron Curtain.
-press: Featured in <a href="https://hackaday.com/2019/02/07/in-soviet-russia-computer-programs-you/" target="_blank">Hackaday</a> and <a href="https://blog.hackster.io/bringing-the-cold-war-back-with-soviet-era-microcomputer-replica-bc247a233b1f" target="_blank">hackster.io</a>
+press: Featured in [Hackaday](https://hackaday.com/2019/02/07/in-soviet-russia-computer-programs-you/){:target="_blank"}{:rel="noopener noreferrer"} and [hackster.io](https://blog.hackster.io/bringing-the-cold-war-back-with-soviet-era-microcomputer-replica-bc247a233b1f){:target="_blank"}{:rel="noopener noreferrer"}
 index: 2
 feature: true
 center_bg: true
