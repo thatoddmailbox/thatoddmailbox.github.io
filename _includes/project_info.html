@@ -21,13 +21,13 @@
 		{% if project.award %}
 		<div class="project-fact project-award">
 			<i class="fas fa-fw fa-trophy"></i>
-			{{ project.award }}
+			{{ project.award | markdownify | remove: '<p>' | remove: '</p>' }}
 		</div>
 		{% endif %}
 		{% if project.press %}
 		<div class="project-fact project-press">
 			<i class="fas fa-fw fa-newspaper"></i>
-			{{ project.press }}
+			{{ project.press | markdownify | remove: '<p>' | remove: '</p>' }}
 		</div>
 		{% endif %}
 		{% if project.collab %}
