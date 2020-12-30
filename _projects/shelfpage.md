@@ -3,7 +3,7 @@ layout: project
 
 name: ShelfPage
 subtitle: Know your books.
-details_front: A website that lets you track and share a collection of books,  which you can share with anyone and access wherever you are.
+details_front: A website that lets you track and share a collection of books, which you can share with anyone and access wherever you are.
 index: 5
 feature: true
 
@@ -13,6 +13,8 @@ go_url: https://shelfpage.com
 
 technology:
 - "Go"
+- "MySQL"
+- "Redis"
 - "TypeScript"
 - "HTML"
 - "CSS"

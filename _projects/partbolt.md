@@ -13,6 +13,8 @@ go_url: https://partbolt.com
 
 technology:
 - "Go"
+- "MySQL"
+- "Redis"
 - "TypeScript"
 - "HTML"
 - "CSS"

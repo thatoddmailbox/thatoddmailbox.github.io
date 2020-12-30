@@ -15,6 +15,8 @@ license: MIT
 
 technology:
 - "Go"
+- "MySQL"
+- "Redis"
 - "JavaScript"
 - "HTML"
 - "CSS"

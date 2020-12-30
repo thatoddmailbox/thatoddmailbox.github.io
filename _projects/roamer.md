@@ -11,4 +11,5 @@ license: MIT
 
 technology:
 - "Go"
+- "MySQL"
 ---

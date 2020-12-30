@@ -21,6 +21,8 @@ technology:
 - "Java"
 - "Objective-C"
 - "Swift"
+- "MySQL"
+- "Redis"
 - "JavaScript"
 - "HTML"
 - "CSS"

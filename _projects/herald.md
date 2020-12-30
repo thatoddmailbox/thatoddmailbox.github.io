@@ -11,4 +11,5 @@ license: MIT
 
 technology:
 - "Rust"
+- "MySQL"
 ---
