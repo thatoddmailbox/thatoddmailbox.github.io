@@ -69,23 +69,23 @@
 	</div>
 	<div class="project-actions">
 		{% if project.go_url %}
-		<a href="{{ project.go_url }}" class="btn btn-primary" target="_blank">{{ project.go_label | default: "Go there" }} <i class="fas fa-arrow-right"></i></a>
+		<a href="{{ project.go_url }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">{{ project.go_label | default: "Go there" }} <i class="fas fa-arrow-right"></i></a>
 		{% endif %}
 
 		{% if project.app_store_url %}
-		<a href="{{ project.app_store_url }}" target="_blank" class="project-app-badge project-app-badge-ios"></a>
+		<a href="{{ project.app_store_url }}" target="_blank" rel="noopener noreferrer" class="project-app-badge project-app-badge-ios"></a>
 		{% endif %}
 
 		{% if project.play_store_url %}
-		<a href="{{ project.play_store_url }}" target="_blank" class="project-app-badge project-app-badge-android"></a>
+		<a href="{{ project.play_store_url }}" target="_blank" rel="noopener noreferrer" class="project-app-badge project-app-badge-android"></a>
 		{% endif %}
 
 		{% if project.github %}
-		<a href="{{ project.github }}" class="btn btn-outline-info" target="_blank"><i class="fab fa-github"></i> View source</a>
+		<a href="{{ project.github }}" class="btn btn-outline-info" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> View source</a>
 		{% endif %}
 
 		{% for link in project.links %}
-		<a href="{{ link.url }}" class="btn btn-outline-info" target="_blank"><i class="fab fa-{{ link.icon }}"></i> {{ link.name }}</a>
+		<a href="{{ link.url }}" class="btn btn-outline-info" target="_blank" rel="noopener noreferrer"><i class="fab fa-{{ link.icon }}"></i> {{ link.name }}</a>
 		{% endfor %}
 	</div>
 	{% unless project.small or project.feature or project.hide_read_more %}
