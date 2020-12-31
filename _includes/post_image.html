@@ -2,5 +2,5 @@
 	<a href="{{ include.url | absolute_url }}">
 		<img src="{{ include.url | absolute_url }}" title="{{ include.caption | smartify | escape }}" alt="{{ include.caption | smartify | escape }}" style="max-width: {{ include.max_width | default: 'initial' }};" />
 	</a>
-	<figcaption>{{ include.caption | smartify }}</figcaption>
+	<figcaption>{{ include.caption | markdownify }}</figcaption>
 </figure>
