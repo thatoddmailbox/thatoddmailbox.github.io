@@ -2,7 +2,7 @@
 layout: project
 
 name: PrivateAuth
-details_front: An extension to the [IndieAuth](https://indieauth.spec.indieweb.org/){:target="_blank"}{:rel="noopener noreferrer"} protocol, intended to protect small, personal applications&mdash;a private media server, a home automation system, or a blog. Includes an implementation as an OpenResty script.
+details_front: An extension to the [IndieAuth](https://indieauth.spec.indieweb.org/){:target="_blank"}{:rel="noopener noreferrer"} protocol, intended to protect small, personal applications, like a private media server, a home automation system, or a blog. Includes an implementation as an OpenResty script.
 small: true
 index: 3
 
