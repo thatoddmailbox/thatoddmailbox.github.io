@@ -7,7 +7,6 @@ details_front: A planner that lets you stay on top of your homework and tests&md
 collab: Collaborated with [MyHomeworkSpace team](https://myhomework.space/about){:target="_blank"}{:rel="noopener noreferrer"}
 index: 6
 feature: true
-big_bg: true
 
 go_url: https://myhomework.space
 github: https://github.com/MyHomeworkSpace
