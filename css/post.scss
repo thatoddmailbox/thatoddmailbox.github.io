@@ -74,52 +74,6 @@
 	}
 }
 
-.popup-note {
-	cursor: pointer;
-	display: inline-block;
-	background: #cccccc;
-	border-radius: 100%;
-	line-height: 1.25rem;
-	text-align: center;
-	width: 1.5rem;
-	height: 1.5rem;
-}
-
-.popup-note:hover {
-	background: #bbbbbb;
-}
-
-.popup-note-details {
-	background: #fafafa;
-	border-radius: 2px;
-	box-shadow: 0 0 2px rgba(0,0,0,0.5);
-	display: none;
-	max-width: 20rem;
-	padding: 0.5rem 1rem;
-
-	.popper__arrow {
-		width: 0;
-		height: 0;
-		border-style: solid;
-		position: absolute;
-		margin: 0 5px;
-	}
-}
-
-.popup-note-details[x-placement^="top"] .popper__arrow {
-	border-width: 5px 5px 0 5px;
-	border-color: #fafafa transparent transparent transparent;
-	bottom: -5px;
-	left: calc(50% - 5px);
-}
-
-.popup-note-details[x-placement^="bottom"] .popper__arrow {
-	border-width: 0 5px 5px 5px;
-	border-color: transparent transparent #fafafa transparent;
-	top: -5px;
-	left: calc(50% - 5px);
-}
-
 @media screen and (max-width: 768px) {
 	.post-image, .post-image-right {
 		display: block;
