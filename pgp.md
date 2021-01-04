@@ -1,6 +1,7 @@
 ---
 title: PGP Key
 layout: page
+description: Download my PGP key, which can be used to send me secure, encrypted messages by email.
 css: /css/home.css
 js: /js/home.js
 ---
