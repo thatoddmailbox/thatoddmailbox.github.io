@@ -167,7 +167,7 @@
 	overflow: hidden;
 	transition: 0.2s max-height;
 }
-.project-expand-content h1 {
+.project-expand-content h2 {
 	font-size: 1.4rem;
 	margin-top: 0.5rem;
 }
