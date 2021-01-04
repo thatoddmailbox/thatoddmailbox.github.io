@@ -4,6 +4,7 @@ collections:
     permalink: /project_info/:name
 
 author:
+  name: Alex Studer
   twitter: studer_alex
 
 twitter:
