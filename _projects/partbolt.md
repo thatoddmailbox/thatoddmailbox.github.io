@@ -3,7 +3,7 @@ layout: project
 
 name: PartBolt
 subtitle: Part tracking made easy.
-details_front: A website that makes it easy to track and organize electronic components.
+details_front: A website that makes it easy to track and organize electronic components, so you know exactly what you have and where it is. You'll spend less time finding stuff and more time on actual projects!
 index: 4
 feature: true
 
