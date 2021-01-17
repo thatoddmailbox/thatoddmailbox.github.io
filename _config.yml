@@ -24,6 +24,7 @@ navigation:
 # paginate: 5
 # paginate_path: "/posts/:num/"
 title: "Alex Studer"
+avatar: "https://avatars0.githubusercontent.com/u/1904587?s=128&v=4"
 url: "https://alex.studer.dev"
 permalink: /:categories/:year/:month/:day/:title
 
