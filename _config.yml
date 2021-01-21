@@ -11,7 +11,7 @@ twitter:
   username: studer_alex
   card: summary
 
-exclude: [vendor]
+exclude: [ "Gemfile", "Gemfile.lock" ]
 
 navigation:
 - name: Home
