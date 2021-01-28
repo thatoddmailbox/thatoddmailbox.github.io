@@ -24,6 +24,7 @@ technology:
 - "MySQL"
 - "Redis"
 - "JavaScript"
+- "Preact"
 - "HTML"
 - "CSS"
 ---

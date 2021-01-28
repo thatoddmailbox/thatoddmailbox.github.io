@@ -16,6 +16,7 @@ license: MIT
 
 technology:
 - "JavaScript"
+- "Preact"
 - "HTML"
 - "CSS"
 ---
