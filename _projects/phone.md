@@ -17,6 +17,7 @@ license: ['MIT', 'CERN OHL-S']
 technology:
 - "KiCad"
 - "C"
+- "FreeRTOS"
 ---
 ## What is it?
 
