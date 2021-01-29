@@ -2,8 +2,6 @@
 title: PGP Key
 layout: page
 description: Download my PGP key, which can be used to send me secure, encrypted messages by email.
-css: /css/home.css
-js: /js/home.js
 ---
 My email address ([alex@studer.dev](mailto:alex@studer.dev)) supports the [Web Key Directory](https://wiki.gnupg.org/WKD) standard. That means that compatible mail clients will automatically locate my key, and, in modern versions of gpg, you can do `gpg --locate-keys alex@studer.dev`.
 
