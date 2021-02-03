@@ -17,6 +17,7 @@ license: CERN OHL-S
 technology:
 - "KiCad"
 - "C"
+- "RISC-V"
 ---
 ## What is it?
 
