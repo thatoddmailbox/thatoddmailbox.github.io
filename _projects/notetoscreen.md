@@ -3,7 +3,7 @@ layout: project
 
 name: NoteToScreen
 subtitle: Your notes, anywhere.
-details_front: A service that lets you scan paper notes with your phone, save them to the cloud, share them with others, and access them anywhere.
+details_front: A service (on the Web, iOS, and Android) that lets you scan paper notes with your phone, save them to the cloud, share them with others, and access them anywhere.
 index: 4
 feature: true
 big_bg: true
