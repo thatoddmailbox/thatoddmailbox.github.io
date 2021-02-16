@@ -56,7 +56,7 @@ js: /js/projects.js
 		{% continue %}
 		{% endif %}
 
-		<div class="project-small {% if project.index < 6 %}col-md-4{% else %}col-md-4{% endif %}">
+		<div class="project-small {% if project.index < 12 %}col-md-4{% else %}col-md-3{% endif %}">
 			{% if project.small_image %}{% include project_image.html %}{% endif %}
 			{% include project_info.html %}
 		</div>
