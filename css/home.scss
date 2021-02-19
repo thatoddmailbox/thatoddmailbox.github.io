@@ -137,20 +137,20 @@
 		padding: 3rem 3rem;
 		background-size: 120%;
 		transition: background-size 0.1s ease-in-out;
-	}
 
-	.hero:hover {
-		background-size: 175%;
-	}
+		&:hover {
+			background-size: 175%;
+		}
 
-	.hero:hover::before {
-		background-color: rgba(68, 69, 70, 0.6);
-	}
+		&:hover::before {
+			background-color: rgba(68, 69, 70, 0.6);
+		}
 
-	.hero:hover .btn-outline-light {
-		color: #212529;
-		background-color: #f8f9fa;
-		border-color: #f8f9fa;
+		&:hover .btn-outline-light {
+			color: #212529;
+			background-color: #f8f9fa;
+			border-color: #f8f9fa;
+		}
 	}
 
 	.hero .home-container {
