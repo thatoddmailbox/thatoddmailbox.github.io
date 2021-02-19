@@ -140,25 +140,26 @@
 
 		&:hover {
 			background-size: 175%;
+
+			&::before {
+				background-color: rgba(68, 69, 70, 0.6);
+			}
+
+			.btn-outline-light {
+				color: #212529;
+				background-color: #f8f9fa;
+				border-color: #f8f9fa;
+			}
 		}
 
-		&:hover::before {
-			background-color: rgba(68, 69, 70, 0.6);
+		.home-container {
+			overflow: hidden;
 		}
 
-		&:hover .btn-outline-light {
-			color: #212529;
-			background-color: #f8f9fa;
-			border-color: #f8f9fa;
+		.hero-text {
+			padding: 1rem 3.5rem;
+			position: relative;
+			left: -2rem;
 		}
-	}
-
-	.hero .home-container {
-		overflow: hidden;
-	}
-	.hero .hero-text {
-		padding: 1rem 3.5rem;
-		position: relative;
-		left: -2rem;
 	}
 }
