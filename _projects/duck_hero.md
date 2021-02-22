@@ -16,3 +16,8 @@ technology:
 - "SDL2"
 
 ---
+## What is it?
+
+## Why was it made?
+
+## What am I proud of?
