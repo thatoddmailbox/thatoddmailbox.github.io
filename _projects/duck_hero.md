@@ -13,5 +13,6 @@ license: MIT
 
 technology:
 - "C++"
+- "SDL2"
 
 ---
