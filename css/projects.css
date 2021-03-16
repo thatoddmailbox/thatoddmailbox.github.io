@@ -7,7 +7,7 @@
 	display: block;
 	width: 100%;
 	min-height: 230px;
-	transition: 0.2s background-color;
+	transition: 0.2s background-color ease-in-out;
 }
 .project.selected {
 	background: #e2e2e2;
