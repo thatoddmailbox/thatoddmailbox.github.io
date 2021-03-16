@@ -15,6 +15,7 @@ technology:
 - "JavaScript"
 - "HTML"
 - "CSS"
+- "SCSS"
 ---
 ## What is it?
 CoursesPlus was a Chrome extension that took the Courses website, which my school used for teachers to post homework and assignments, and extended it. The extension provided extensive customization options for almost every page on the site, and also added several useful features, such as the ability to hide events.
