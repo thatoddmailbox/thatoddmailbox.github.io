@@ -165,7 +165,7 @@
 	line-height: 1.7;
 	padding-top: 10px;
 	overflow: hidden;
-	transition: 0.2s max-height;
+	transition: 0.2s max-height ease-in-out;
 }
 .project-expand-content h2 {
 	font-size: 1.4rem;
