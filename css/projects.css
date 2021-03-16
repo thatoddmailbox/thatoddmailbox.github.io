@@ -10,7 +10,7 @@
 	transition: 0.2s background-color;
 }
 .project.selected {
-	background: #dfdfdf;
+	background: #e2e2e2;
 }
 .project.feature {
 	border-radius: 5px;
