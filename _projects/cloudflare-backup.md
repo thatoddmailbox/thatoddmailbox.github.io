@@ -2,7 +2,7 @@
 layout: project
 
 name: cloudflare-backup
-details_front: A tool that allows automated exporting of all DNS records in a CloudFlare account.
+details_front: A tool that allows automated exporting of all DNS records and Page Rules in a CloudFlare account.
 small: true
 index: 9
 
