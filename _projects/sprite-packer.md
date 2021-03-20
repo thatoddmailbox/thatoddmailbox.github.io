@@ -2,7 +2,7 @@
 layout: project
 
 name: sprite-packer
-details_front: A program that packs multiple image files into a single spritesheet.
+details_front: A program that packs multiple image files (of the same dimensions) into a single PNG spritesheet.
 small: true
 index: 14
 
