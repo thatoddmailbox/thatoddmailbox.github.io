@@ -148,15 +148,16 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-}
-.project-app-badge-ios {
-	background-image: url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/appstore-lrg.svg);
-	width: 135px;
-}
-.project-app-badge-android {
-	background-image: url(https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png);
-	background-position: -9px center;
-	width: 150px;
+
+	&-ios {
+		background-image: url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/appstore-lrg.svg);
+		width: 135px;
+	}
+	&-android {
+		background-image: url(https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png);
+		background-position: -9px center;
+		width: 150px;
+	}
 }
 
 .project-expand-trigger {
