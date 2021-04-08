@@ -133,12 +133,13 @@
 .project-actions {
 	height: 40px;
 	margin-top: 0.5rem;
-}
-.project-actions .btn {
-	display: block;
-	float: left;
-	height: 38px;
-	margin-right: 5px;
+
+	.btn {
+		display: block;
+		float: left;
+		height: 38px;
+		margin-right: 5px;
+	}
 }
 .project-app-badge {
 	display: block;
@@ -169,8 +170,9 @@
 	padding-top: 10px;
 	overflow: hidden;
 	transition: 0.2s max-height ease-in-out;
-}
-.project-expand-content h2 {
-	font-size: 1.4rem;
-	margin-top: 0.5rem;
+
+	h2 {
+		font-size: 1.4rem;
+		margin-top: 0.5rem;
+	}
 }
