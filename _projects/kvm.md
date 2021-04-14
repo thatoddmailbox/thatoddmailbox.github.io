@@ -4,6 +4,7 @@ layout: project
 name: kvm
 subtitle: A custom KVM switch.
 details_front: An open-source HDMI Keyboard/Video/Mouse (KVM) switch, which lets you switch two monitors and four USB devices between up to three computers.
+hidden: true
 index: 1
 feature: true
 center_bg: true
