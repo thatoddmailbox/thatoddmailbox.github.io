@@ -3,8 +3,7 @@ layout: project
 
 name: kvm
 subtitle: A custom KVM switch.
-details_front: A 2G GSM cell phone which I designed and built for my end-of-year project in my senior year of high school. It can make calls, receive texts, connect to the Internet, get your location, and do most things you'd expect a phone to be capable of.
-hidden: true
+details_front: An open-source HDMI Keyboard/Video/Mouse (KVM) switch, which lets you switch two monitors and four USB devices between up to three computers.
 index: 1
 feature: true
 center_bg: true
