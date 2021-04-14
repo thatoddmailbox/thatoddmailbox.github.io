@@ -9,7 +9,7 @@ js: /js/projects.js
 
 <div class="container">
 	{% for project in projects_sorted %}
-	{% if project.feature != true %}
+	{% if project.hidden or project.feature != true %}
 	{% continue %}
 	{% endif %}
 	<div class="project feature">
