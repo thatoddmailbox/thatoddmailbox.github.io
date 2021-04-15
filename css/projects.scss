@@ -64,9 +64,10 @@
 	.background.background-centered {
 		background-position: center;
 	}
-}
-.project.feature .project-fact, .project.feature .project-technology-item {
-	font-size: 1rem;
+
+	.project-fact, .project-technology-item {
+		font-size: 1rem;
+	}
 }
 
 .project-feature-info {
