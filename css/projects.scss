@@ -50,17 +50,19 @@
 		background-size: 250%;
 	}
 }
-.project.feature .background.background-centered {
-	background-position: center;
-}
-.project.feature .project-expand-content {
-	display: none;
-}
 .project.feature {
 	font-size: 1.1rem;
 
 	.project-name {
 		font-size: 1.75rem;
+	}
+
+	.project-expand-content {
+		display: none;
+	}
+
+	.background.background-centered {
+		background-position: center;
 	}
 }
 .project.feature .project-fact, .project.feature .project-technology-item {
