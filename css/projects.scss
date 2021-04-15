@@ -56,11 +56,12 @@
 .project.feature .project-expand-content {
 	display: none;
 }
-.project.feature .project-name {
-	font-size: 1.75rem;
-}
 .project.feature {
 	font-size: 1.1rem;
+
+	.project-name {
+		font-size: 1.75rem;
+	}
 }
 .project.feature .project-fact, .project.feature .project-technology-item {
 	font-size: 1rem;
