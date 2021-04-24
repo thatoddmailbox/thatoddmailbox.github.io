@@ -55,16 +55,16 @@
 	
 		background-position: left top;
 		background-size: cover;
-	}
 
-	@media screen and (min-width: 992px) {
-		.background.background-big {
-			background-size: 250%;
+		@media screen and (min-width: 992px) {
+			&.background-big {
+				background-size: 250%;
+			}
 		}
-	}
 
-	.background.background-centered {
-		background-position: center;
+		&.background-centered {
+			background-position: center;
+		}
 	}
 
 	.project-fact, .project-technology-item {
