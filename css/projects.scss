@@ -107,6 +107,12 @@
 	font-style: italic;
 	font-size: 1.3rem;
 
+	@media (max-width: 767px) {
+		& {
+			display: block;
+		}	
+	}
+
 	@media (min-width: 768px) {
 		&:before {
 			content: "\2014";
