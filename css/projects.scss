@@ -103,17 +103,15 @@
 	line-height: 1.25;
 }
 .project-subtitle {
-	display: inline-block;
+	display: block;
 	font-style: italic;
 	font-size: 1.3rem;
 
-	@media (max-width: 767px) {
-		& {
-			display: block;
-		}	
-	}
-
 	@media (min-width: 768px) {
+		& {
+			display: inline-block;
+		}
+
 		&:before {
 			content: "\2014";
 		}
