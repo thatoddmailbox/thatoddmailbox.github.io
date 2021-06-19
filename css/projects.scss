@@ -112,10 +112,12 @@
 	display: block;
 	font-style: italic;
 	font-size: 1.3rem;
+	margin-top: -0.15rem;
 
 	@media (min-width: 768px) {
 		& {
 			display: inline-block;
+			margin-top: 0;
 		}
 
 		&:before {
