@@ -33,20 +33,21 @@
 		margin-top: 0.5rem;
 		text-align: center;
 	}
-}
-.post-image-left {
-	float: left;
-	clear: left;
-}
-.post-image-center {
-	a {
-		display: block;
-		text-align: center;
+
+	&-left {
+		float: left;
+		clear: left;
 	}
-}
-.post-image-right {
-	float: right;
-	clear: right;
+	&-center {
+		a {
+			display: block;
+			text-align: center;
+		}
+	}
+	&-right {
+		float: right;
+		clear: right;
+	}
 }
 
 .post-info {
