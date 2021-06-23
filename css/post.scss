@@ -1,9 +1,5 @@
 ---
 ---
-.container.post {
-	font-size: 1.2rem;
-	max-width: 720px;
-}
 .post-details {
 	color: #829AB1;
 	margin-bottom: 1rem;
@@ -15,6 +11,10 @@
 	}
 	code {
 		margin: 0 0.05rem;
+	}
+	&.container {
+		font-size: 1.2rem;
+		max-width: 720px;
 	}
 }
 .h2, h2 {
