@@ -29,6 +29,7 @@ js: /js/projects.js
 
 <div class="container">
 	{% for project in projects_sorted %}
+
 	{% if project.hidden or project.small or project.feature %}
 	{% continue %}
 	{% endif %}
@@ -45,6 +46,7 @@ js: /js/projects.js
 			</div>
 		</div>
 	</div>
+
 	{% endfor %}
 </div>
 
