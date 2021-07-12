@@ -18,6 +18,7 @@ license: ['MIT', 'CERN OHL-S']
 technology:
 - "KiCad"
 - "C"
+- "STM8"
 ---
 ## What is it?
 
