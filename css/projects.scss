@@ -78,6 +78,15 @@
 	}
 }
 
+.project:not(.feature) {
+	.project-name {
+		margin-top: 0.5rem;
+
+		@media (min-width: 768px) {
+			margin-top: 0;
+		}
+	}
+}
 .project-feature-info {
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
