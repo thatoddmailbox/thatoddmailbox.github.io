@@ -56,20 +56,20 @@
 	padding: 3rem 0;
 	position: relative;
 	overflow: hidden;
-}
 
-.hero::before {
-	background-color: rgba(0, 0, 0, 0.6);
-	content: "";
-	position: absolute;
-	box-sizing: content-box;
-	top: -3rem;
-	left: -3rem;
-	padding: 3rem;
-	width: 100%;
-	height: 100%;
-	transition: background-color 0.1s ease-in-out;
-	z-index: 0;
+	&::before {
+		background-color: rgba(0, 0, 0, 0.6);
+		content: "";
+		position: absolute;
+		box-sizing: content-box;
+		top: -3rem;
+		left: -3rem;
+		padding: 3rem;
+		width: 100%;
+		height: 100%;
+		transition: background-color 0.1s ease-in-out;
+		z-index: 0;
+	}
 }
 
 .hero-text {
