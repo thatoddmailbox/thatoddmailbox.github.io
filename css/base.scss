@@ -110,12 +110,14 @@ nav.navbar {
 
 			li {
 				padding: 0 0.5rem;
-			}
-			li:first-child a {
-				padding-left: 0;
-			}
-			li:last-child a {
-				padding-right: 0;
+
+				&:first-child a {
+					padding-left: 0;
+				}
+
+				&:last-child a {
+					padding-right: 0;
+				}
 			}
 		}
 	}
