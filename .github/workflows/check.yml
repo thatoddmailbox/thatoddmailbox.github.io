@@ -12,7 +12,7 @@ jobs:
     - name: Setup Ruby
       uses: ruby/setup-ruby@v1.61.0
       with:
-        ruby-version: "2.7.2"
+        ruby-version: "2.7.4"
         bundler-cache: true
 
     - uses: actions/checkout@v2
