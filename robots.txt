@@ -1,2 +1,5 @@
 User-Agent: *
 Disallow: /cdn-cgi/
+
+User-Agent: Googlebot
+Allow: /cdn-cgi/l/email-protection
