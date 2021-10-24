@@ -2,7 +2,7 @@
 layout: project
 
 name: fsbrowse
-details_front: A Go module that provides a web UI to browse an fs.FS. Effectively a slightly nicer-looking version of http.FileServer.
+details_front: A Go module that provides a simple web UI to interactively browse an fs.FS. Effectively a slightly nicer-looking version of Go's built-in http.FileServer.
 small: true
 index: 6
 
