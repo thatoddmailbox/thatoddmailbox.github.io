@@ -5,7 +5,8 @@ name: CoursesPlus
 details_front: A Google Chrome extension that adds features and improvements to the (now defunct) Courses website my school used.
 collab: Collaborated with [some friends](https://github.com/CoursesPlus/CoursesPlus/graphs/contributors){:target="_blank"}{:rel="noopener noreferrer"}
 archived: no longer useful, as Courses has since been replaced
-index: 7
+index: 1
+overflow: true
 
 go_url: https://coursesplus.github.io
 github: https://github.com/CoursesPlus/CoursesPlus
