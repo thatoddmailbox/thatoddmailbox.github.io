@@ -212,3 +212,20 @@
 		margin-top: 0;
 	}
 }
+
+.overflow-projects-toggle {
+	text-align: center;
+	padding: 1.5rem 0;
+}
+
+.overflow-projects {
+	display: none;
+
+	&.active {
+		display: block;
+	}
+}
+
+.project-small-row:last-child {
+	border-bottom: none;
+}

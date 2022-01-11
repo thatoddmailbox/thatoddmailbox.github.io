@@ -53,4 +53,26 @@ $(document).ready(function() {
             }
         }
     });
+
+    $(".overflow-projects-toggle-button").click(function() {
+        var $button = $(this);
+        var $buttonIcon = $button.find(".fas");
+        var $buttonActionText = $button.find("span");
+        var $overflowProjects = $(".overflow-projects");
+
+        if ($overflowProjects.hasClass("active")) {
+            $overflowProjects.removeClass("active");
+            $buttonActionText.text("show");
+            $buttonIcon.removeClass("fa-chevron-up").addClass("fa-chevron-down");
+        } else {
+            $overflowProjects.addClass("active");
+            $buttonActionText.text("hide");
+            $buttonIcon.removeClass("fa-chevron-down").addClass("fa-chevron-up");
+
+            window.scrollTo({
+                top: $button.position().top - 100,
+                behavior: "smooth"
+            });
+        }
+    });
 });

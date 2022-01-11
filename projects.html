@@ -30,7 +30,7 @@ js: /js/projects.js
 <div class="container">
 	{% for project in projects_sorted %}
 
-	{% if project.hidden or project.small or project.feature %}
+	{% if project.hidden or project.small or project.feature or project.overflow %}
 	{% continue %}
 	{% endif %}
 
@@ -55,7 +55,7 @@ js: /js/projects.js
 	<div class="row project-small-row">
 		{% for project in projects_sorted %}
 
-		{% if project.hidden or project.small != true or project.feature %}
+		{% if project.hidden or project.small != true or project.feature or project.overflow %}
 		{% continue %}
 		{% endif %}
 
@@ -63,10 +63,63 @@ js: /js/projects.js
 			{% if project.small_image %}{% include project_image.html %}{% endif %}
 			{% include project_info.html %}
 		</div>
-		{% if project.index == 3 or project.index == 6 or project.index == 10 or project.index == 14 %}
+		{% if project.index == 3 or project.index == 6 or project.index == 10 %}
 			</div>
 			<div class="row project-small-row">
 		{% endif %}
+
+		{% endfor %}
+	</div>
+</div>
+
+<noscript>
+	<style>
+		.overflow-projects-toggle {
+			display: none;
+		}
+	</style>
+</noscript>
+
+<div class="overflow-projects-toggle">
+	<button class="btn btn-outline-dark overflow-projects-toggle-button">
+		<span>show</span> older projects <i class="fas fa-fw fa-chevron-down"></i>
+	</button>
+</div>
+
+<div class="container overflow-projects">
+	{% for project in projects_sorted %}
+
+	{% if project.hidden or project.overflow != true or project.small %}
+	{% continue %}
+	{% endif %}
+
+	<div class="project">
+		<div class="project-container">
+			<div class="row">
+				<div class="col-md-3">
+					{% include project_image.html %}
+				</div>
+
+				<div class="col-md-9">
+					{% include project_info.html %}
+				</div>
+			</div>
+		</div>
+	</div>
+
+	{% endfor %}
+
+	<div class="row project-small-row">
+		{% for project in projects_sorted %}
+
+		{% if project.hidden or project.overflow != true or project.small != true %}
+		{% continue %}
+		{% endif %}
+
+		<div class="project-small col-md-3">
+			{% if project.small_image %}{% include project_image.html %}{% endif %}
+			{% include project_info.html %}
+		</div>
 
 		{% endfor %}
 	</div>
