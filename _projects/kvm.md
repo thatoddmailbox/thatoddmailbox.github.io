@@ -7,7 +7,6 @@ details_front: An open-source HDMI [Keyboard/Video/Mouse (KVM) switch](https://e
 hidden: true
 index: 1
 feature: true
-center_bg: true
 
 hide_read_more: true
 
