@@ -10,7 +10,7 @@ GEM
     addressable (2.8.4)
       public_suffix (>= 2.0.2, < 6.0)
     afm (0.2.2)
-    async (2.6.2)
+    async (2.6.3)
       console (~> 1.10)
       fiber-annotation
       io-event (~> 1.1)
@@ -20,7 +20,7 @@ GEM
       execjs
     coffee-script-source (1.11.1)
     colorator (1.1.0)
-    commonmarker (0.23.9)
+    commonmarker (0.23.10)
     concurrent-ruby (1.2.2)
     console (1.18.0)
       fiber-annotation
@@ -110,7 +110,7 @@ GEM
     http_parser.rb (0.8.0)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
-    io-event (1.2.2)
+    io-event (1.2.3)
     jekyll (3.9.3)
       addressable (~> 2.4)
       colorator (~> 1.0)
@@ -233,7 +233,7 @@ GEM
       jekyll (>= 3.5, < 5.0)
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
-    minitest (5.18.1)
+    minitest (5.19.0)
     nokogiri (1.15.3)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
@@ -254,7 +254,7 @@ GEM
     rb-fsevent (0.11.2)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    rexml (3.2.5)
+    rexml (3.2.6)
     rouge (3.26.0)
     ruby-rc4 (0.1.5)
     ruby2_keywords (0.0.5)
@@ -283,7 +283,7 @@ GEM
     unf_ext (0.0.8.2)
     unicode-display_width (1.8.0)
     yell (2.2.2)
-    zeitwerk (2.6.8)
+    zeitwerk (2.6.10)
 
 PLATFORMS
   ruby
