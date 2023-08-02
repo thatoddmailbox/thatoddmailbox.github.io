@@ -2,13 +2,12 @@
 layout: project
 
 name: DaltonTab
-subtitle: A cleaner new tab page.
 details_front: A replacement for your new tab page that provides you with at-a-glance information about your upcoming classes and homework.
 award: 1st place at [TigerHacks 2015](https://web.archive.org/web/20170707221701/http://www.tigerhacks.com/){:target="_blank"}{:rel="noopener noreferrer"} hackathon
 collab: Collaborated with [some friends](https://github.com/MyHomeworkSpace/DaltonTab/graphs/contributors){:target="_blank"}{:rel="noopener noreferrer"}
-index: 8
-feature: true
+index: 2
 center_bg: true
+overflow: true
 
 go_url: https://chrome.google.com/webstore/detail/daltontab/ggfjkmflbbjndabmnngilkfpmdegbfkm
 github: https://github.com/MyHomeworkSpace/DaltonTab
