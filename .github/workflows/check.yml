@@ -10,14 +10,14 @@ jobs:
 
     steps:
     - name: Setup Ruby
-      uses: ruby/setup-ruby@v1.81.0
+      uses: ruby/setup-ruby@v1.152.0
       with:
-        ruby-version: "2.7.4"
+        ruby-version: "3.2.2"
         bundler-cache: true
 
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
-    - uses: actions/cache@v2
+    - uses: actions/cache@v3
       with:
         path: vendor/bundle
         key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
