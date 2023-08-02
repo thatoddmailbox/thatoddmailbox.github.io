@@ -11,6 +11,6 @@ license: MIT
 
 technology:
 - "Go"
-- "Amazon API Gateway"
+- "AWS API Gateway"
 - "AWS Lambda"
 ---
