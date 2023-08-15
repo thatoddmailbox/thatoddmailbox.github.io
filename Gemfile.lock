@@ -2,12 +2,12 @@ GEM
   remote: https://rubygems.org/
   specs:
     Ascii85 (1.1.0)
-    activesupport (7.0.6)
+    activesupport (7.0.7)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
-    addressable (2.8.4)
+    addressable (2.8.5)
       public_suffix (>= 2.0.2, < 6.0)
     afm (0.2.2)
     async (2.6.3)
@@ -22,7 +22,7 @@ GEM
     colorator (1.1.0)
     commonmarker (0.23.10)
     concurrent-ruby (1.2.2)
-    console (1.18.0)
+    console (1.23.2)
       fiber-annotation
       fiber-local
     dnsruby (1.70.0)
@@ -98,7 +98,7 @@ GEM
     html-pipeline (2.14.3)
       activesupport (>= 2)
       nokogiri (>= 1.4)
-    html-proofer (5.0.7)
+    html-proofer (5.0.8)
       addressable (~> 2.3)
       async (~> 2.1)
       nokogiri (~> 1.13)
@@ -234,7 +234,7 @@ GEM
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
     minitest (5.19.0)
-    nokogiri (1.15.3)
+    nokogiri (1.15.4)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     octokit (4.25.1)
@@ -284,7 +284,7 @@ GEM
     unicode-display_width (1.8.0)
     webrick (1.8.1)
     yell (2.2.2)
-    zeitwerk (2.6.10)
+    zeitwerk (2.6.11)
 
 PLATFORMS
   ruby
