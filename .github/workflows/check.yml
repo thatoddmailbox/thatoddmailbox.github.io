@@ -10,7 +10,7 @@ jobs:
 
     steps:
     - name: Setup Ruby
-      uses: ruby/setup-ruby@v1.152.0
+      uses: ruby/setup-ruby@v1.172.0
       with:
         ruby-version: "3.2.2"
         bundler-cache: true
