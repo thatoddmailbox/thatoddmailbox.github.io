@@ -2,7 +2,7 @@
 layout: project
 
 name: Duck Hacker
-details_front: A game where you hack various things by programming DuckBots, small robots that run Lua code.
+details_front: A game where you hack various things by programming DuckBots, small robots that run Lua code. Uses custom OpenGL code for 3D rendering.
 index: 2
 
 hide_read_more: true
