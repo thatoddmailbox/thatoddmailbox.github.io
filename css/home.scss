@@ -86,7 +86,7 @@
 	background-image: url(/assets/iotaseed/seedgen.png);
 }
 
-@media (min-width: 1275px) {
+@media (min-width: 1400px) {
 	.home-group {
 		background: #e9ecef;
 		overflow: hidden;
@@ -139,7 +139,7 @@
 	.hero {
 		clip-path: polygon(
 			10% 0, /* left top */
-			100% 0, /* right top */ 
+			100% 0, /* right top */
 			90% 100%, /* right bottom */
 			0 100% /* left bottom */
 		);
