@@ -3,7 +3,7 @@ layout: project
 
 name: Duck Hero
 details_front: A 2D role-playing game I wrote for my sister in C++. You play as a duck named Ducky, saving the city of Duckville from the evil robots which have taken over.
-index: 2
+index: 3
 
 hide_read_more: true
 
