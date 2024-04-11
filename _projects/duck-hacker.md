@@ -8,7 +8,7 @@ index: 2
 hide_read_more: true
 
 go_label: "Learn more"
-go_url: https://github.com/thatoddmailbox/duck-hacker#duck-hacker
+go_url: https://github.com/thatoddmailbox/duck-hacker#readme
 license: MIT
 
 technology:
