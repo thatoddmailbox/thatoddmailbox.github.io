@@ -11,6 +11,8 @@
 	{% unless page.date %}<meta property="og:type" content="website">{% endunless %}
 	{% unless page.image %}<meta property="og:image" content="{{ site.avatar | xml_escape }}">{% endunless %}
 	{% seo title=false %}
+	<meta name="fediverse:creator" content="@alex_studer@mastodon.online">
+
 	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
