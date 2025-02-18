@@ -7,7 +7,7 @@ index: 4
 
 hide_read_more: true
 
-go_url: https://web.mit.edu/astuder/www/motorsim/
+go_url: https://alex.studer.dev/motorsim/
 github: https://github.com/thatoddmailbox/motorsim
 license: MIT
 
