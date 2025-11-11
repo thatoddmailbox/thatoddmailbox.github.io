@@ -14,7 +14,7 @@ jobs:
     - name: Setup Ruby
       uses: ruby/setup-ruby@v1.221.0
       with:
-        ruby-version: "3.2.2"
+        ruby-version: "3.4.7"
         bundler-cache: true
 
     - name: Build and check the site
