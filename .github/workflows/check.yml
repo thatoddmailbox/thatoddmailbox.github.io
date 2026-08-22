@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v7
 
     - name: Setup Ruby
-      uses: ruby/setup-ruby@v1.267.0
+      uses: ruby/setup-ruby@v1.321.0
       with:
         ruby-version: "3.4.7"
         bundler-cache: true
