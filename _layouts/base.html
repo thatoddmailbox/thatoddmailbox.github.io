@@ -28,6 +28,7 @@
 	{% if page.css %}<link rel="stylesheet" href="{{ page.css }}" />{% endif %}
 </head>
 <body>
+	{% unless page.navless %}
 	<nav class="navbar navbar-light bg-light">
 		<div class="navbar-group">
 			{% unless page.home %}<a class="navbar-brand" href="/">Alex Studer</a>{% endunless %}
@@ -42,6 +43,7 @@
 			</ul>
 		</div>
 	</nav>
+	{% endunless %}
 
 	<noscript>
 		<strong>Hey there!</strong> Some parts of this website need JavaScript, so it's recommended to have it enabled!
