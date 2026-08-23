@@ -3,45 +3,59 @@ title: Home
 layout: base
 description: Hi! I'm Alex Studer.
 home: true
+navless: true
 css: /css/home.css
-js: /js/home.js
 ---
-<div class="home-group">
-	<div class="jumbotron jumbotron-fluid home-jumbotron">
-		<div class="home-container">
-			<div class="home-avatar">
-				<img src="{{ site.avatar }}" alt="Avatar" width="128" height="128" />
+<div class="container homeContainer">
+	<div class="row">
+		<div class="col-md-4 bg-light">
+			<div class="homeAvatarRow">
+				<img src="{{ site.avatar }}" alt="Avatar" width="96" height="96" />
 			</div>
-			<div class="home-info">
-				<h1 class="home-name display-4">Alex Studer</h1>
-
-				<div class="home-links">
+			<h1 class="homeName">Alex Studer</h1>
+			<div class="homeLinks">
+				<div class="homeLinkGroup">
+					<div><i class="fas fa-fw fa-map-marker-alt"></i> Cambridge, MA</div>
+				</div>
+				<div class="homeLinkGroup">
 					<div><i class="fas fa-fw fa-envelope"></i> <a href="mailto:alex@studer.dev" rel="me">alex@studer.dev</a></div>
 					<div><i class="fab fa-fw fa-github"></i> <a href="https://github.com/thatoddmailbox" rel="me noopener noreferrer" target="_blank">thatoddmailbox</a></div>
 					<div><i class="fab fa-fw fa-linkedin"></i> <a href="https://www.linkedin.com/in/alex-studer/" rel="me noopener noreferrer" target="_blank">Alex Studer</a></div>
-					<div><i class="fab fa-fw fa-mastodon"></i> <a href="https://mastodon.online/@alex_studer" rel="me noopener noreferrer" target="_blank">@alex_studer@mastodon.online</a></div>
-					<div><i class="fab fa-fw fa-bluesky"></i> <a href="https://bsky.app/profile/alex.studer.dev" rel="me noopener noreferrer" target="_blank">@alex.studer.dev</a></div>
-					<div><i class="fas fa-fw fa-key"></i> <a href="/pgp">PGP Key</a></div>
+				</div>
+				<div class="homeLinkGroup">
+					<details class="homeLinksExtra">
+						<summary><i class="fas fa-fw fa-caret-right"></i> more links</summary>
+						<div><i class="fab fa-fw fa-mastodon"></i> <a href="https://mastodon.online/@alex_studer" rel="me noopener noreferrer" target="_blank">@alex_studer@mastodon.online</a></div>
+						<div><i class="fab fa-fw fa-bluesky"></i> <a href="https://bsky.app/profile/alex.studer.dev" rel="me noopener noreferrer" target="_blank">@alex.studer.dev</a></div>
+						<div><i class="fas fa-fw fa-key"></i> <a href="/pgp">PGP Key</a></div>
+					</details>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div id="made" class="hero">
-		<div class="home-container">
-			<div class="hero-text">
-				<h2><i class="fas fa-fw fa-cogs"></i> Things I've made</h2>
-				<p class="lead">Various projects I've created, ranging from an online homework planner to an assembler (and custom game) for the Gameboy Color.</p>
-				<a href="/projects" class="btn btn-lg btn-outline-light">learn more &rarr;</a>
-			</div>
-		</div>
-	</div>
-	<div id="written" class="hero">
-		<div class="home-container">
-			<div class="hero-text">
-				<h2><i class="fas fa-fw fa-pencil-alt"></i> Things I've written</h2>
-				<p class="lead">Articles I've written, describing everything from a malicious cryptocurrency seed generator to my replica Soviet microcomputer.</p>
-				<a href="/posts" class="btn btn-lg btn-outline-light">read more &rarr;</a>
-			</div>
+		<div class="col-md-8">
+			<p class="homeIntro">Hi! I'm Alex, an engineer who enjoys working at the intersection of hardware and software.</p>
+			<p class="homeIntro">I work as a Design Verification Engineer at NVIDIA in Westford, MA. Before that, I graduated from MIT, studying Electrical Engineering and Computer Science.</p>
+			<p class="homeIntro">This website documents some of the projects and writing I've completed over the years in my own time.</p>
+			<a href="/projects" class="actionBox">
+				<div class="actionBoxImage actionBoxImageProjects"></div>
+				<div class="actionBoxDetails">
+					<div>
+						<h3 class="actionBoxTitle">Projects</h3>
+						<div class="actionBoxDescription">Various projects I've created, ranging from an online homework planner to an assembler (and custom game) for the Gameboy Color.</div>
+					</div>
+					<div class="actionBoxCta">see more &rarr;</div>
+				</div>
+			</a>
+			<a href="/posts" class="actionBox">
+				<div class="actionBoxImage actionBoxImagePosts"></div>
+				<div class="actionBoxDetails">
+					<div>
+						<h3 class="actionBoxTitle">Posts</h3>
+						<div class="actionBoxDescription">Articles I've written, describing everything from a malicious cryptocurrency seed generator to my replica Soviet microcomputer.</div>
+					</div>
+					<div class="actionBoxCta">see more &rarr;</div>
+				</div>
+			</a>
 		</div>
 	</div>
 </div>
