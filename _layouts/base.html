@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+{% assign cachebust = site.github.build_revision | slice: 0, 8 %}
+{% unless cachebust %}{% assign cachebust = site.time | date: "%s" %}{% endunless %}
 <head>
 	<meta charset="utf-8">
 
@@ -21,11 +23,11 @@
 	<link href="https://use.typekit.net/qqg5txr.css" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-	<link rel="stylesheet" href="/css/all.min.css" />
-	<link rel="stylesheet" href="/css/highlight.css" />
-	<link rel="stylesheet" href="/css/base.css" />
-	{% if page.includes_posts or layout.includes_posts %}<link rel="stylesheet" href="/css/bigfoot-default.css" /><link rel="stylesheet" href="/css/post.css" />{% endif %}
-	{% if page.css %}<link rel="stylesheet" href="{{ page.css }}" />{% endif %}
+	<link rel="stylesheet" href="/css/all.min.css?v={{ cachebust }}" />
+	<link rel="stylesheet" href="/css/highlight.css?v={{ cachebust }}" />
+	<link rel="stylesheet" href="/css/base.css?v={{ cachebust }}" />
+	{% if page.includes_posts or layout.includes_posts %}<link rel="stylesheet" href="/css/bigfoot-default.css?v={{ cachebust }}" /><link rel="stylesheet" href="/css/post.css?v={{ cachebust }}" />{% endif %}
+	{% if page.css %}<link rel="stylesheet" href="{{ page.css }}?v={{ cachebust }}" />{% endif %}
 </head>
 <body>
 	{% unless page.navless %}
@@ -68,12 +70,12 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 	{% if page.includes_posts or layout.includes_posts %}
-	<script src="/js/bigfoot.min.js"></script>
+	<script src="/js/bigfoot.min.js?v={{ cachebust }}"></script>
 	<script>$.bigfoot();</script>
 	{% endif %}
 
 	{% if page.js %}
-	<script src="{{ page.js }}"></script>
+	<script src="{{ page.js }}?v={{ cachebust }}"></script>
 	{% endif %}
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
