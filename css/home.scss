@@ -10,6 +10,22 @@ html, body {
 
 .homeContainer > .row > div {
 	padding: 2rem 2rem;
+
+	&.homeInfoBar {
+		padding-bottom: 1.25rem;
+
+		@media (min-width: 768px) {
+			padding-bottom: 2rem;
+		}
+	}
+
+	&.homeDetails {
+		padding-top: 1.25rem;
+
+		@media (min-width: 768px) {
+			padding-top: 2rem;
+		}
+	}
 }
 
 .homeAvatarRow {
