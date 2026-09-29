@@ -46,6 +46,11 @@ html, body {
 			i {
 				flex: 0 0 1.25em;
 			}
+
+			a {
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
 		}
 	}
 
